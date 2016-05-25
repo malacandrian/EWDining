@@ -1,0 +1,32 @@
+{% assign Subscriptions = site.data.SubscriptionServices %}
+<div class="-subscription-panel">
+  {% for service in Subscriptions.Services %}
+    {% if service.action %}
+      <a href="{{service.action}}">
+    {% endif %}
+    <div
+      class="-subscription-panel-main"
+      id="-subscription-panel-main-{{service.id}}"
+      style="background: {{service.color}};" >
+      {% capture contents %}{{Subscriptions.ContentLocation}}/{{service.contents}}{% endcapture %}
+      {% include {{contents}} variable-param=service %}
+    </div>
+    {% if service.action %}
+      </a>
+    {% endif %}
+  {% endfor %}
+  {% capture numSubs %}{{Subscriptions.Services | size}}{% endcapture %}
+  <div
+    class="-subscription-panel-secondary"
+    >
+    {% for service in Subscriptions.Services %}
+      <div
+        class="subscription-panel-secondary-item"
+        id="subscription-panel-secondary-item-{{service.id}}"
+        style="background-color: {{service.color}}"
+        >
+        <img src="{{Subscriptions.ImageLocation}}/{{service.icon}}" />
+      </div>
+    {% endfor %}
+  </div>
+</div>

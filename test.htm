@@ -1,0 +1,57 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dining with the EWs</title>
+    <link rel="stylesheet" type="text/css" href="screen.css" />
+    <script type="text/ecmascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script type="text/ecmascript" src="resources/js/subscription-panel.js"></script>
+  </head>
+
+  <body>
+    <div class="main">
+      {% include SVG/logo.svg %}
+      <ul class="mainmenu">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>All Videos</li>
+        <li>Recipies</li>
+        <li>Crafts</li>
+        <li>Party Themes</li>
+        <li><form><input type="search" value="Search" /><input type="submit" value="&#128269;" /></form></li>
+      </ul>
+      <div class="frame">
+        <div class="content">
+          <h1>Main title</h1>
+          <iframe class="youtube" src="https://www.youtube.com/embed/MLktPkkHyhg" frameborder="0" allowfullscreen></iframe>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed vehicula nunc, et consequat eros. Ut id vestibulum ipsum, sed convallis est. In dictum tempor tristique. Praesent vulputate mauris eu elit tincidunt accumsan. Etiam quis dolor vehicula, suscipit odio sed, mattis mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut at quam sagittis, pharetra lectus et, placerat mi. Vestibulum mollis mollis massa. Suspendisse facilisis sit amet felis quis tempor. Etiam id consequat diam, et cursus arcu. Vestibulum vel diam eros. Integer a quam id dui pretium euismod id eu est. Proin consectetur eleifend orci et porta. Duis condimentum, risus congue mollis vestibulum, ex magna lobortis ipsum, non scelerisque magna magna eget nisi. Morbi est lorem, elementum quis quam in, pellentesque aliquam nisl. Morbi sed laoreet ligula, eget congue orci.</p>
+          <h2>subtitle</h2>
+          <h3>further subtitle</h3>
+          <p>Cras quis fringilla lectus. Cras tellus felis, aliquam ac nunc at, sollicitudin iaculis justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent quis sem ac sem ultrices mollis. Mauris eu laoreet est. Mauris vitae nulla eu metus malesuada egestas et eu nunc. Vestibulum aliquet iaculis tellus, eget lacinia nunc suscipit vitae. Nam vehicula luctus lorem, vel venenatis velit ullamcorper sed. Donec volutpat libero eget dui suscipit, vel malesuada magna dictum.</p>
+          <p>Maecenas sed velit massa. Ut nec sodales leo. In semper ligula a felis dictum, sed condimentum risus pulvinar. Duis rhoncus facilisis congue. Nunc ac purus ipsum. Aenean vel elementum metus. Phasellus suscipit pharetra massa, at egestas tellus consequat eget. Donec et suscipit mauris. Pellentesque ornare sem placerat nisi ultrices, vitae pretium massa laoreet. Etiam facilisis placerat dui ut pellentesque. Quisque et quam eget augue venenatis porta dapibus vel lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>part 2</h3>
+          <p>Quisque suscipit ex et nibh malesuada, ac sodales elit pretium. Quisque hendrerit risus diam, a tincidunt odio efficitur eu. Nullam porttitor finibus tempus. Vivamus in ex in enim finibus sodales pulvinar a turpis. Integer sagittis porttitor tempor. Phasellus non auctor arcu. Nullam quis congue velit. Vestibulum consequat sem et enim lacinia, eget faucibus sem dapibus. Quisque fringilla consectetur mi, ac dictum nibh aliquam non. Pellentesque accumsan urna et interdum dignissim. Praesent accumsan eros quis hendrerit imperdiet.</p>
+          <h2>Up one level</h2>
+          <p>Curabitur ullamcorper dui tellus, ac gravida lorem imperdiet sed. Donec commodo vel ante nec aliquet. Nam maximus ullamcorper arcu, vitae posuere tellus placerat eget. Etiam sem sem, accumsan vitae mattis vitae, rutrum a neque. Donec gravida et enim nec ultrices. Cras pulvinar egestas metus, at aliquam nibh pulvinar sit amet. Morbi id varius lectus. Pellentesque sed vulputate est. Nullam et rhoncus dolor. Duis consequat turpis quis facilisis ornare. Suspendisse velit augue, pharetra ac tempus in, vehicula eu odio. Vivamus condimentum dolor ac venenatis aliquet. Aenean eros mauris, scelerisque commodo risus ac, ultrices rutrum lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean maximus nulla tellus, at imperdiet risus dictum sit amet. Sed ultricies, ante ac tincidunt bibendum, elit odio imperdiet neque, vitae egestas tellus tortor non sem. </p>
+          <h4>H4</h4>
+          <h5>H5</h5>
+          <h6>H6</h6>
+        </div>
+
+        <div class="sidebar">
+          {% include subscriptions/main.html %}
+
+          <ul class="featuredStories">
+            <li>Masquerade Ball</li>
+            <li>Summer BBQ</li>
+            <li>Cheese and Wine Evening</li>
+            <li>Sports Night</li>
+            <li>Film Night</li>
+            <li>Afternoon Tea</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

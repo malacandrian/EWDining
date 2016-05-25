@@ -1,0 +1,77 @@
+ImageLocation: resources/images/subscriptions
+ContentLocation: subscriptions
+
+Services:
+    -
+      name: YouTube
+      id: youtube
+      icon: youtube.png
+      color: hsla(358,79%,45%,1)
+      action: https://www.youtube.com/user/evanrwilliams?sub_confirmation=1
+      order: 0
+      contents: simple.html
+      call: Subscribe
+      preposition: with
+
+    -
+      name: Feedly
+      id: feedly
+      icon: feedly.png
+      color: hsla(87,50%,50%,1)
+      action: http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fhttps%3A%2F%2Fwilliams.ee%2Ffeed.xml
+      order: 10
+      contents: simple.html
+      call: Subscribe
+      preposition: with
+
+    -
+      name: Email
+      id: email
+      icon: email.png
+      color: hsla(217,99%,65%,1)
+      order: 5
+      contents: form.html
+      call: Subscribe
+      preposition: using
+
+    -
+      name: RSS
+      id: rss
+      icon: rss.png
+      color: hsla(24,100%,50%,1)
+      action: feed.xml
+      order: 20
+      contents: simple.html
+      call: Subscribe
+      preposition: with
+
+    -
+      name: Twitter
+      id: Twitter
+      icon: twitter.png
+      color: hsla(206,82%,63%,1)
+      action: https://twitter.com/evan_williams
+      order: 7
+      contents: simple.html
+      call: Follow Us
+      preposition: "on"
+
+    -
+      name: Facebook
+      id: facebook
+      icon: facebook.png
+      color: hsla(221,44%,41%,1)
+      order: 8
+      contents: simple.html
+      call: Find Us
+      preposition: "on"
+
+    -
+      name: Pinterest
+      id: pinterest
+      icon: pinterest.png
+      color: hsla(2,97.9%,37.5%,1)
+      order: 9
+      contents: simple.html
+      call: Follow Us
+      preposition: "on"
