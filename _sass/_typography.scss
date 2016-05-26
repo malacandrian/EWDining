@@ -1,35 +1,21 @@
-/* Declare variables */
-
-/* Font faces */
-$Body-FontFace: 'News Cycle', 'Century Gothic', sans-serif;
-$Title-FontFace: 'Pacifico', cursive;
-
-/* Text sizes */
-$BaseTextSize: 16pt;
-$ScaleFactor: 1.25;
-$LineHeight: 1.5;
-
-/* Import fonts from google */
-@import url(https://fonts.googleapis.com/css?family=Pacifico|News+Cycle:400,700);
-
-body
-{
-  font-family: $Body-FontFace;
-  font-size: $BaseTextSize;
-}
-
-/* Main text */
-p
-{
-  margin: 0;
-}
-
-
 /* Header styles */
 h1, h2, h3, h4, h5, h6
 {
   text-transform: capitalize;
-  margin-bottom: 0;
+  text-align: center;
+
+  @include margin-top(0.5);
+}
+
+h1, h2
+{
+  border-bottom: 1px solid #000000;
+  @include margin-bottom(0.5);
+}
+
+h3, h4, h5, h6
+{
+  @include margin-bottom(0);
 }
 
 h1:first-child,
@@ -39,35 +25,16 @@ h3 + h4,
 h4 + h5,
 h5 + h6
 {
-  margin-top: 0;
+  @include margin-top(0);
 }
 
-h1, h2, h3, h4
+.mainmenu
 {
-  font-family: $Title-FontFace;
+  font-family: $font-headings;
+  @include font-size(map-get($modular-scale,xs));
 }
 
-h1
+p
 {
-  font-size: ($ScaleFactor * $ScaleFactor * $ScaleFactor)*100%;
-}
-
-h2
-{
-  font-size: ($ScaleFactor * $ScaleFactor)*100%;
-}
-
-h3, h5, h6
-{
-  font-size: $ScaleFactor*100%;
-}
-
-h5
-{
-  font-weight: bold;
-}
-
-h6
-{
-  font-style: italic;
+  text-indent: 1rem;
 }

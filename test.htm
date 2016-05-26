@@ -4,7 +4,9 @@
 <html>
   <head>
     <title>Dining with the EWs</title>
-    <link rel="stylesheet" type="text/css" href="screen.css" />
+    <style type="text/css">
+      @import url("screen.css") screen and (min-width: 600px);
+    </style>
     <script type="text/ecmascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script type="text/ecmascript" src="resources/js/subscription-panel.js"></script>
   </head>
@@ -43,7 +45,7 @@
           {% include subscriptions/main.html %}
 
           <ul class="featuredStories">
-            <li>Masquerade Ball</li>
+            <li>{% include SVG/icons/domino-mask.svg %}<span>Masquerade Ball</span></li>
             <li>Summer BBQ</li>
             <li>Cheese and Wine Evening</li>
             <li>Sports Night</li>
@@ -52,6 +54,7 @@
           </ul>
         </div>
       </div>
+      <span class="copyright-footer">Copyright Evan and Emma Williams 2016. All rights reserved.</span>
     </div>
   </body>
 </html>

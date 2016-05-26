@@ -4,9 +4,13 @@ $-subscription-panel-height: 210px;
 {
   width: 100%;
   border: 1px solid hsla(0,0%,0%,1);
+  border-top-width: 2px;
 
-  /* Background pattern from subtlepatterns.com */
-  
+  *
+  {
+    @include margin(0,0);
+  }
+
 
   > a
   {
@@ -26,6 +30,7 @@ $-subscription-panel-height: 210px;
 
     color: hsla(0,100%,100%,1);
     border-right: 2px solid hsla(0,0%,0%,1);
+    border-left: 1px solid hsla(0,0%, 0%, 1);
 
     img.-subscription-panel-simple-image
     {
@@ -102,6 +107,7 @@ $-subscription-panel-height: 210px;
     display: flex;
     display: none;
 
+
     > div
     {
       width: 100%;
@@ -118,9 +124,14 @@ $-subscription-panel-height: 210px;
         border-left: 2px solid hsla(0,0%,0%,1);
       }
 
-      &:first-child, &.active:first-child
+      &:first-child
       {
         border-left: none;
+      }
+
+      &.active:first-child
+      {
+        border-left: 1px solid hsla(0,0%,0%,1);
       }
 
       > img
@@ -130,11 +141,5 @@ $-subscription-panel-height: 210px;
         height:50%;
       }
     }
-
-    > div.active
-    {
-
-    }
-
   }
 }

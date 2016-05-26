@@ -1,12 +1,26 @@
 ---
 ---
 @charset "utf-8";
-@import "typography";
-@import "mixins";
-@import "subscription-panel";
 
-$background-color: #ffffff;
-$accent-color: #880000;
+/*  Gutenberg Typography Styles
+ *  http://matejlatin.github.io/Gutenberg/
+ *
+ *  Copyright Matej Latin http://matejlatin.co.uk/
+ *  Licenced under Creative Commons Share-Alike 3.0
+ *  https://creativecommons.org/licenses/by-sa/3.0/
+ */
+@import 'gutenberg/src/style/gutenberg-reset';
+@import 'gutenberg/src/style/gutenberg-mixins';
+@import 'gutenberg/src/style/gutenberg-config';
+@import 'gutenberg/src/style/gutenberg-typography';
+@import 'gutenberg/src/style/gutenberg-style';
+
+
+ /* End of Gutenberg Typography */
+ @import 'colors';
+ @import 'mixins';
+ @import 'subscription-panel';
+ @import 'typography';
 
 
 *
@@ -19,7 +33,10 @@ body
   margin: 0;
 
   /* Background pattern from subtlepatterns.com */
-  background-image: url(/resources/images/paper_fibers.png);
+  background: url(/resources/images/coffee-stain.png), url(/resources/images/tileable_wood_texture.png);
+  background-repeat: no-repeat, repeat;
+  background-position: top -50px right -50px, top left;
+  background-size: 300px;
 
   display: flex;
   flex-direction: row;
@@ -28,18 +45,25 @@ body
 
     .main
     {
-      max-width: 960px;
-
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      box-sizing: content-box;
+
+      @include margin(1,1);
+      @include padding(1,1);
+
+      border: 2px solid $black;
+      box-shadow: 0.5rem 0.5rem fade-out($black, 0.8);
+
+      /* Background pattern from subtlepatterns.com */
+      background-image: url(/resources/images/paper_fibers.png);
 
       .logo
       {
         height: 200px;
         width: auto;
-
-        margin-top: 1em;
       }
 
       .mainmenu
@@ -52,19 +76,57 @@ body
         margin-bottom: 0;
         list-style: none;
 
-        font-family: $Title-FontFace;
         text-transform: capitalize;
 
+        /*
+        border-image-source: url("/resources/images/borders/mainMenu.png");
+        border-image-slice: 0 0 100% 0;
+        border-image-width: 0 0 20px 0;
+        border-image-outset: 10px;
+        border-image-repeat: round; */
+        /*
         &::after {
           content: url(resources/images/svg/border.svg);
-          margin: auto;
+          margin-left: auto;
+          margin-right:auto;
+
+          @include margin-top(-2);
+          @include margin-bottom(2);
         }
+        */
 
         li {
           margin-top: .5em;
           margin-bottom: .5em;
-          margin-left: auto;
-          margin-right: auto;
+          margin-left: 2rem;
+          margin-right: 0;
+
+          &:first-child
+          {
+            margin-left: 0;
+          }
+
+          &:last-child
+          {
+            flex-grow: 20;
+          }
+
+          form {
+            display: flex;
+
+            * {
+              border: 2px solid $black;
+            }
+            input[type=search] {
+              border-right: none;
+              flex-grow: 20;
+            }
+            input[type=submit] {
+              border-left: none;
+              background-color: $black;
+              color: $white;
+            }
+          }
         }
       }
     }
@@ -74,22 +136,29 @@ body
     {
       display: flex;
       min-height: auto;
-      margin-top: 0;
+      @include margin-top(-1);
     }
 
     .content
     {
-      width: 640px;
-      padding-right: 10px
+      width: auto;
     }
 
     .sidebar
     {
-      width: 320px;
+      min-width: 320px;
+      max-width: 320px;
+      box-sizing: content-box;
 
-      border-left: 10px double #000000;
-      margin-left: 10px;
-      padding-left: 10px;
+      /*border-image-source: url("/resources/images/borders/sidebar.png");
+      border-image-slice: 0 0 0 100%;
+      border-image-width: 0 0 0 20px;
+      border-image-outset: 10px;
+      border-image-repeat: round;*/
+
+      @include margin-top(2);
+      margin-left: 1rem;
+      padding-left: 1rem;
 
       .featuredStories
       {
@@ -98,8 +167,24 @@ body
         padding: 0;
         list-style: none;
 
+        align-items: flex-start;
+        justify-content: flex-start;
 
         li
+        {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+
+          svg
+          {
+            height: 3rem;
+            width: auto;
+          }
+        }
+
+
+        /*li
         {
           width: 100%;
           height: 100px;
@@ -107,33 +192,28 @@ body
           margin: auto;
 
            background: linear-gradient(rgba(00,00,00,00), rgba(00,00,00,00) 25%, rgba(00,00,00,0.25));
-           color: #ffffff;
+           color: $white;
 
-          border: 2px solid #000000;
+          border: 2px solid $black;
 
           display: flex;
           flex-direction: row;
           align-items: flex-end;
         }
-          li:first-child
-          {
-            margin-left: 0;
-          }
-
-          li:last-child
-          {
-            margin-right: 0;
-          }
+        */
 
       }
     }
 
     .youtube
     {
-      width: 642px;
+      width: 100%;
       height: 361px;
-      //margin: -.25em;
     }
 
+    .copyright-footer
+    {
+      @include margin-bottom(0);
+    }
 
 }
