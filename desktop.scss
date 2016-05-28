@@ -78,22 +78,11 @@ body
 
         text-transform: capitalize;
 
-        /*
-        border-image-source: url("/resources/images/borders/mainMenu.png");
-        border-image-slice: 0 0 100% 0;
-        border-image-width: 0 0 20px 0;
-        border-image-outset: 10px;
-        border-image-repeat: round; */
-        /*
-        &::after {
-          content: url(resources/images/svg/border.svg);
-          margin-left: auto;
-          margin-right:auto;
-
-          @include margin-top(-2);
-          @include margin-bottom(2);
+        a, a:link, a:visited, a:hover, a:active
+        {
+          text-decoration: none;
+          color: $black;
         }
-        */
 
         li {
           margin-top: .5em;
@@ -137,11 +126,79 @@ body
       display: flex;
       min-height: auto;
       @include margin-top(-1);
+      //@include margin-bottom(0);
     }
 
     .content
     {
       width: auto;
+      @include margin-bottom(0);
+
+      .pagination
+      {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        &, *
+        {
+          @include margin-bottom(0);
+        }
+
+        p
+        {
+          width: 100%;
+          text-align: center;
+          border-bottom: 1px solid $black;
+          @include margin-bottom(0.5);
+        }
+
+        >ol
+        {
+          width: 100%;
+
+          >li
+          {
+            margin-left: 0;
+            margin-right: 0;
+
+            &:first-child
+            {
+              margin-left: auto;
+            }
+
+            &:last-child
+            {
+              margin-right: auto;
+            }
+          }
+        }
+
+        ol
+        {
+          display: flex;
+          list-style: none;
+          padding: 0;
+
+          li
+          {
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            &.active
+            {
+              font-weight: bold;
+            }
+
+            //Put ellipses after the first item, and before the last
+            //if the list has been truncated
+            &.abbreviated:first-child::after, &.abbreviated:last-child::before
+            {
+              content: '...';
+            }
+          }
+        }
+      }
     }
 
     .sidebar
@@ -149,12 +206,6 @@ body
       min-width: 320px;
       max-width: 320px;
       box-sizing: content-box;
-
-      /*border-image-source: url("/resources/images/borders/sidebar.png");
-      border-image-slice: 0 0 0 100%;
-      border-image-width: 0 0 0 20px;
-      border-image-outset: 10px;
-      border-image-repeat: round;*/
 
       @include margin-top(2);
       margin-left: 1rem;
@@ -182,26 +233,6 @@ body
             width: auto;
           }
         }
-
-
-        /*li
-        {
-          width: 100%;
-          height: 100px;
-          padding: 5px;
-          margin: auto;
-
-           background: linear-gradient(rgba(00,00,00,00), rgba(00,00,00,00) 25%, rgba(00,00,00,0.25));
-           color: $white;
-
-          border: 2px solid $black;
-
-          display: flex;
-          flex-direction: row;
-          align-items: flex-end;
-        }
-        */
-
       }
     }
 
@@ -211,9 +242,38 @@ body
       height: 361px;
     }
 
-    .copyright-footer
+    .footer
     {
       @include margin-bottom(0);
-    }
+      display: flex;
+      width: 100%;
 
+      *
+      {
+        margin-left: auto;
+        margin-right: auto;
+        @include margin-bottom(0);
+
+        &:first-child
+        {
+          margin-left: 0;
+        }
+
+        &:last-child
+        {
+          margin-right: 0;
+        }
+      }
+
+      ul
+      {
+        display: flex;
+        list-style: none;
+
+        li
+        {
+          margin-left: 1rem;
+        }
+      }
+    }
 }

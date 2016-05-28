@@ -1,20 +1,24 @@
+---
+---
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body>
+    <div class="main">
+      {% include SVG/logo.svg %}
+      {% include menu.html variable-param=site.data.Menu.Main%}
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+      <div class="frame">
+        <div class="content">
+          {{ content }}
+        </div>
+        <div class="sidebar">
+          {% include sidebar.html %}
+        </div>
       </div>
-    </div>
-
-    {% include footer.html %}
-
+      <div class="footer">
+        <span class="copyright">Copyright Evan and Emma Williams 2016</span>
+        {% include menu.html variable-param=site.data.Menu.Footer %}
+      </div>
   </body>
-
 </html>

@@ -3,7 +3,7 @@ $-subscription-panel-height: 210px;
 .-subscription-panel
 {
   width: 100%;
-  border: 1px solid hsla(0,0%,0%,1);
+  border: 1px solid $black;
   border-top-width: 2px;
 
   *
@@ -28,9 +28,9 @@ $-subscription-panel-height: 210px;
 
     line-height: 1;
 
-    color: hsla(0,100%,100%,1);
-    border-right: 2px solid hsla(0,0%,0%,1);
-    border-left: 1px solid hsla(0,0%, 0%, 1);
+    color: $white;
+    border-right: 1px solid $black;
+    border-left: 1px solid $black;
 
     img.-subscription-panel-simple-image
     {
@@ -113,15 +113,15 @@ $-subscription-panel-height: 210px;
       width: 100%;
       display: flex;
 
-      border-left: solid 1px hsla(0,0%,0%,1);
-      border-top: solid 2px hsla(0,0%,0%,1);
+      border-left: solid 1px $black;
+      border-top: solid 2px $black;
 
       &.active
       {
         border-top: none;
-        border-right: 1px solid hsla(0,0%,0%,1);
-        border-bottom: 1px solid hsla(0,0%,0%,1);
-        border-left: 2px solid hsla(0,0%,0%,1);
+        border-right: 1px solid $black;
+        border-bottom: 1px solid $black;
+        border-left: 2px solid $black;
       }
 
       &:first-child
@@ -131,7 +131,7 @@ $-subscription-panel-height: 210px;
 
       &.active:first-child
       {
-        border-left: 1px solid hsla(0,0%,0%,1);
+        border-left: 1px solid $black;
       }
 
       > img

@@ -1,0 +1,67 @@
+{% comment %}
+  This is suprisingly complicated, and has lots of different states it can exist in
+  So the first step is to find all the relevant values to determine the correct state
+{% endcomment %}
+{% assign range = site.data.Pagination.range %}
+
+{% assign firstPage = paginator.page |minus: range %}
+{% if firstPage < 2 %}{% assign firstPage = 2 %}{% endif %}
+{% if firstPage == 3 %}{% assign firstPage = 2 %}{% endif %}
+
+{% assign lastPage = paginator.page |plus: range %}
+{% if lastPage > paginator.total_pages |minus: 1 %}{% assign lastPage = paginator.total_pages |minus: 1 %}{% endif %}
+{% if lastPage == paginator.total_pages |minus: 2 %}{% assign lastPage = paginator.total_pages |minus: 1 %}{% endif %}
+
+{% comment %}Begin outputting the pagination values{% endcomment %}
+<ol>
+
+  {% comment %}
+    This next section renders the beginning of the list.
+
+    There are 3 main ways it will display:
+      - Blank: if the current page is 1
+      - 1, 2, 3: if firstPage is <= 3
+      - 1... 7, 8, 9: if the firstPage > 3
+  {% endcomment %}
+  {% if paginator.page > 1 %}
+    <li>
+      <ol>
+        <li><a href="/">1</a></li>
+        {% if paginator.page > 2 %}
+        {% if firstPage > 3 %}<li>...</li>{% endif %}
+          {% assign max = paginator.page|minus: 1 %}
+          {% for pageNo in (firstPage..max) %}
+            <li><a href="/{{pageNo}}">{{pageNo}}</a></li>
+          {% endfor %}
+
+        {% endif %}
+      </ol>
+    </li>
+  {% endif %}
+  {% comment %} Output the current page {% endcomment %}
+  <li class="active">{{paginator.page}}</li>
+
+  {% comment %}
+    Finally, we render the end of the list.
+    It's the same logic as the start, but in revers
+  {% endcomment %}
+  {% if paginator.page < paginator.total_pages %}
+    <li>
+      <ol>
+        {% if paginator.page < paginator.total_pages|minus: 1 %}
+          {% assign min = paginator.page|plus: 1 %}
+          {% for pageNo in (min..lastPage) %}
+            <li><a href="/{{pageNo}}">{{pageNo}}</a></li>
+          {% endfor %}
+          {% if lastPage < paginator.total_pages|minus: 2 %}<li>...</li>{% endif %}
+        {% endif %}
+        <li>
+          <a href="/{{paginator.total_pages}}">
+            {{paginator.total_pages}}
+          </a>
+        </li>
+      </ol>
+    </li>
+  {% endif %}
+
+</ol>

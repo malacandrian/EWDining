@@ -17,5 +17,10 @@ url: "https://williams.ee" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  malacandrian
 
+paginate: 5
+paginate_path: /:num/
+
 # Build settings
 markdown: kramdown
+gems:
+  - jekyll-paginate

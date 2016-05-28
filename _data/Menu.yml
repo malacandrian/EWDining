@@ -1,0 +1,35 @@
+Main:
+  class: mainmenu
+  endContent: <li><form><input type="search" value="Search" /><input type="submit" value="&#128269;" /></form></li>
+  contents:
+    -
+       text: Home
+       link: /
+    -
+      text: About Us
+      link: /about-us/
+    -
+      text: All Videos
+      link: /videos/
+    -
+      text: Recipies
+      link: /recipies/
+
+    -
+      text: Crafts
+      link: /crafts/
+    -
+      text: Party Themes
+      link: /themes/
+
+
+Footer:
+  class: endmenu
+  endContent: ""
+  contents:
+    -
+      text: Privacy and Cookies Policy
+      link: /privacy/
+    -
+      text: Contact Us
+      link: /contact/

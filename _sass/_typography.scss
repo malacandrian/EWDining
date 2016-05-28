@@ -28,6 +28,20 @@ h5 + h6
   @include margin-top(0);
 }
 
+h1
+{
+  a
+  {
+    &:link, &:visited, &:hover, &:active
+    {
+      color: $black;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Other Styles */
+
 .mainmenu
 {
   font-family: $font-headings;
@@ -37,4 +51,13 @@ h5 + h6
 p
 {
   text-indent: 1rem;
+}
+
+.pagination
+{
+  p
+  {
+    @include font-size(map-get($modular-scale, m));
+    font-family: $font-headings;
+  }
 }
