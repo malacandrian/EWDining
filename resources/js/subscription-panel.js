@@ -13,10 +13,10 @@ $(document).ready(function (){
     curPanel.hide();
     secondaryItems.removeClass('active')
 
-    var source = $(event.target)
-    if(source.prop('nodeName')==='IMG'){
+    var source = $(event.target).closest("div")
+    /*if(source.prop('nodeName')==='SVG'){
       source = source.parent()
-    }
+    }*/
     source.addClass('active')
 
     var id = source.attr('id').split('-').pop()

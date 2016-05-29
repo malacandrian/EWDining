@@ -124,15 +124,20 @@ body
     .frame
     {
       display: flex;
-      min-height: auto;
+      //min-height: auto;
+      width: 100%;
       @include margin-top(-1);
-      //@include margin-bottom(0);
     }
 
     .content
     {
-      width: auto;
+      width: 100%;
       @include margin-bottom(0);
+
+      article
+      {
+        width: 100%;
+      }
 
       .pagination
       {
@@ -209,7 +214,7 @@ body
 
       @include margin-top(2);
       margin-left: 1rem;
-      padding-left: 1rem;
+      margin-right: 0;
 
       .featuredStories
       {

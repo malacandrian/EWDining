@@ -1,6 +1,7 @@
 <div class="-subscription-panel-form">
   <div class="-subscription-panel-form-image">
-    <img src="{{site.data.SubscriptionServices.ImageLocation}}/{{include.variable-param.icon}}" />
+    {% capture icon %}/{{site.data.SubscriptionServices.ImageLocation}}/{{include.variable-param.icon}}{% endcapture %}
+    {% include {{icon}} %}
   </div>
   <div class="-subscription-panel-form-form">
     <span>{{include.variable-param.call}}</span>

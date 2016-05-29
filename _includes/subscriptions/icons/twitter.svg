@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   viewBox="0 0 100 100"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-filename="C:\Users\evan\Source\EWDining\resources\images\subscriptions\pinterest.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   sodipodi:docname="twitter.svg">
+  <defs
+     id="defs4">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath20">
+      <path
+         d="m 0 10.012 h 1366.9 v 1110.9 h -1366.9 Z"
+         id="path18" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="14.605775"
+     inkscape:cy="69.705754"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:snap-page="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     borderlayer="true"
+     inkscape:snap-global="true"
+     inkscape:window-width="1373"
+     inkscape:window-height="937"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:object-nodes="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-952.36216)">
+    <path
+       d="m 99.999935,971.34876 c -3.67741,1.63197 -7.63209,2.73497 -11.78133,3.2319 4.23484,-2.5401 7.48649,-6.56032 9.01833,-11.34973 -3.96345,2.35188 -8.35264,4.05781 -13.02787,4.97734 -3.74034,-3.98611 -9.07247,-6.47771 -14.97301,-6.47771 -11.33071,0 -20.51437,9.18439 -20.51437,20.51436 0,1.60851 0.17973,3.17471 0.53095,4.67524 -17.05058,-0.85443 -32.16696,-9.02419 -42.28552,-21.43464 -1.766,3.02856 -2.77756,6.55212 -2.77756,10.31243 0,7.11838 3.62028,13.39653 9.1266,17.07689 -3.36278,-0.10506 -6.52658,-1.02839 -9.29266,-2.56607 -0.003,0.0863 -0.003,0.17176 -0.003,0.2575 0,9.94153 7.07247,18.23123 16.45656,20.11713 -1.71998,0.4689 -3.53191,0.7169 -5.4031,0.7169 -1.32327,0 -2.60631,-0.1252 -3.8611,-0.3658 2.61237,8.1501 10.18733,14.082 19.16616,14.2481 -7.02696,5.5033 -15.87134,8.7813 -25.48367,8.7813 -1.65481,0 -3.28905,-0.098 -4.89528,-0.286 9.08271,5.8207 19.86477,9.2159 31.45152,9.2159 37.73392,0 58.36607,-31.2592 58.36607,-58.37123 0,-0.88903 -0.0204,-1.772 -0.0579,-2.65182 4.00661,-2.89474 7.48432,-6.50697 10.23634,-10.62184"
+       id="path22"
+       style="fill:#ffffff;fill-opacity:1"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

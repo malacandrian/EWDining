@@ -8,7 +8,7 @@
       class="-subscription-panel-main"
       id="-subscription-panel-main-{{service.id}}"
       style="background: {{service.color}};" >
-      {% capture contents %}{{Subscriptions.ContentLocation}}/{{service.contents}}{% endcapture %}
+      {% capture contents %}/{{Subscriptions.ContentLocation}}/{{service.contents}}{% endcapture %}
       {% include {{contents}} variable-param=service %}
     </div>
     {% if service.action %}
@@ -25,7 +25,8 @@
         id="subscription-panel-secondary-item-{{service.id}}"
         style="background-color: {{service.color}}; order: {{service.order}}"
         >
-        <img src="{{Subscriptions.ImageLocation}}/{{service.icon}}" />
+        {% capture icon %}/{{site.data.SubscriptionServices.ImageLocation}}/{{service.icon}}{% endcapture %}
+        {% include {{icon}} %}
       </div>
     {% endfor %}
   </div>

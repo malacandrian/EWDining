@@ -1,0 +1,5 @@
+<h1><a href="{{include.archive-item.url}}">{{include.archive-item.title}}</a></h1>
+{% if include.archive-item.video %}
+  <iframe class="youtube" src="https://www.youtube.com/embed/{{include.archive-item.video}}" frameborder="0" allowfullscreen></iframe>
+{% endif %}
+{{include.archive-item.excerpt}}

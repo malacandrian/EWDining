@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% assign anyPosts = false %}
+{% for post in site.posts %}
+  {% comment %}
+    Work out what test to apply to what property, and apply that test
+  {% endcomment %}
+  {% assign include-post = false %}
+
+  {% comment %} Property exists test {% endcomment %}
+  {% if page.test == "exists" %}
+    {% if post[page.testProperty] %}
+      {% assign include-post = true %}
+    {% endif %}
+  {% endif %}
+
+  {% comment %} Property equals test {% endcomment %}
+  {% if page.test == "equals" %}
+    {% if post[page.testProperty] == page.testValue %}
+      {% assign include-post = true %}
+    {% endif %}
+  {% endif %}
+
+  {% comment %} If the post has passed the test, include it {% endcomment %}
+  {% if include-post %}
+    {% include archive-item.html archive-item=post %}
+    {% assign anyPosts = true %}
+  {% endif %}
+
+{% endfor %}
+
+{% unless anyPosts %}This section is currently empty. Try coming back later.{% endunless %}

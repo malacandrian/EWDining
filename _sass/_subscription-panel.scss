@@ -32,7 +32,7 @@ $-subscription-panel-height: 210px;
     border-right: 1px solid $black;
     border-left: 1px solid $black;
 
-    img.-subscription-panel-simple-image
+    svg
     {
       margin-top: 35px;
     }
@@ -76,7 +76,7 @@ $-subscription-panel-height: 210px;
 
         width: 30%;
 
-        img
+        svg
         {
           width: 80%;
         }
@@ -108,7 +108,7 @@ $-subscription-panel-height: 210px;
     display: none;
 
 
-    > div
+    div
     {
       width: 100%;
       display: flex;
@@ -134,11 +134,11 @@ $-subscription-panel-height: 210px;
         border-left: 1px solid $black;
       }
 
-      > img
+      svg
       {
-        margin: 25%;
+        margin: auto;
         width: 50%;
-        height:50%;
+        fill: $white;
       }
     }
   }

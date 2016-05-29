@@ -2,11 +2,7 @@
 layout: default
 ---
 {% for post in paginator.posts %}
-  <h1><a href="{{post.url}}">{{post.title}}</a></h1>
-  {% if post.video %}
-    <iframe class="youtube" src="https://www.youtube.com/embed/{{post.video}}" frameborder="0" allowfullscreen></iframe>
-  {% endif %}
-  {{post.excerpt}}
+  {% include archive-item.html archive-item=post %}
 {% endfor %}
 {% if paginator.total_pages > 1 %}
   <div class="pagination">
