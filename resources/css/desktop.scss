@@ -45,11 +45,13 @@ body
 
     .main
     {
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
       box-sizing: content-box;
+      width: 100%;
 
       @include margin(1,1);
       @include padding(1,1);
@@ -64,6 +66,29 @@ body
       {
         height: 200px;
         width: auto;
+      }
+
+      .search {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include margin(1,1);
+        display: flex;
+        width: 25%;
+
+
+        * {
+          border: 2px solid $black;
+        }
+        input[type=search] {
+          border-right: none;
+          width: 100%;
+        }
+        input[type=submit] {
+          border-left: none;
+          background-color: $black;
+          color: $white;
+        }
       }
 
       .mainmenu
@@ -87,34 +112,17 @@ body
         li {
           margin-top: .5em;
           margin-bottom: .5em;
-          margin-left: 2rem;
-          margin-right: 0;
+          margin-left: auto;
+          margin-right: auto;
 
           &:first-child
           {
-            margin-left: 0;
+            //margin-left: 0;
           }
 
           &:last-child
           {
-            flex-grow: 20;
-          }
-
-          form {
-            display: flex;
-
-            * {
-              border: 2px solid $black;
-            }
-            input[type=search] {
-              border-right: none;
-              flex-grow: 20;
-            }
-            input[type=submit] {
-              border-left: none;
-              background-color: $black;
-              color: $white;
-            }
+            //flex-grow: 20;
           }
         }
       }
@@ -124,15 +132,26 @@ body
     .frame
     {
       display: flex;
-      //min-height: auto;
       width: 100%;
-      @include margin-top(-1);
+      @include margin-top(1);
     }
 
     .content
     {
       width: 100%;
       @include margin-bottom(0);
+
+      .party
+      {
+        clear: left;
+
+        svg
+        {
+          float: left;
+          width: 200px;
+          height: auto;
+        }
+      }
 
       article
       {
@@ -214,26 +233,50 @@ body
 
       @include margin(2,0,0,1);
 
-      .featuredStories
+      .parties
       {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        list-style: none;
-
-        align-items: flex-start;
-        justify-content: flex-start;
-
-        li
+        a
+        {
+          &:link, &:visited, &:hover, &:active
+          {
+            color: $black;
+          }
+        }
+        ul
         {
           display: flex;
+          flex-direction: column;
+          padding: 0;
+          list-style: none;
+
           align-items: flex-start;
           justify-content: flex-start;
 
-          svg
+          li a
           {
-            height: 3rem;
-            width: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            *
+            {
+              margin-left: 0;
+              margin-right: 0;
+              margin-top: auto;
+              margin-bottom: auto;
+            }
+
+            svg
+            {
+              height: 3rem;
+              width: auto;
+            }
+
+            span
+            {
+              margin-left: 1rem;
+              flex-grow: 20;
+            }
           }
         }
       }
@@ -241,8 +284,18 @@ body
 
     .youtube
     {
+      position: relative;
       width: 100%;
-      height: 361px;
+      height: 0;
+      padding-bottom: 51%;
+
+      iframe
+      {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0; top: 0;
+      }
     }
 
     .footer

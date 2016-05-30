@@ -1,0 +1,26 @@
+---
+  layout: page
+  title: Our Parties
+---
+{{ content }}
+{% assign Parties = site.data.Parties %}
+{% for party in Parties.parties %}
+  <div class="party">
+    <h2>{{party.name}}</h2>
+    {% capture svg %}{{Parties.iconPath}}{{party.icon}}{% endcapture %}
+    {% include {{svg}} %}
+    <p>{{party.description}}</p>
+    <h3>Posts</h3>
+    <ul>
+    {% for post in site.posts %}
+      {% if post.party == party.slug %}
+        <li>
+          <a href="{{post.url}}">
+            {{post.title}}
+          </a>
+          <span class"type">[{{post.type}}]</span>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endfor %}

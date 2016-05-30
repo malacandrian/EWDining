@@ -1,6 +1,5 @@
 Main:
   class: mainmenu
-  endContent: <li><form><input type="search" value="Search" /><input type="submit" value="&#128269;" /></form></li>
   contents:
     -
        text: Home
@@ -14,14 +13,15 @@ Main:
     -
       text: Recipies
       link: /recipies/
-
     -
       text: Crafts
       link: /crafts/
     -
       text: Party Themes
       link: /themes/
-
+    -
+      text: Puppets
+      link: /puppets/
 
 Footer:
   class: endmenu

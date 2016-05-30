@@ -1,0 +1,14 @@
+path: /parties/
+iconPath: /parties/icons/
+parties:
+  -
+    name: Masquerade Ball
+    slug: masquerade
+    icon: domino-mask.svg
+    iconCredit: http://game-icons.net/lorc/originals/domino-mask.html
+    description: Blah blah blah blah blah
+  -
+    name: Summer BBQ
+    slug: bbq
+    icon: bbq.svg
+    iconCredit: http://game-icons.net/lorc/originals/campfire.html

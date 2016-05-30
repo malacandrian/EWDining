@@ -61,3 +61,29 @@ p
     font-family: $font-headings;
   }
 }
+
+.party
+{
+  h3
+  {
+    text-align: left;
+  }
+}
+
+.parties
+{
+  h1
+  {
+    border-bottom: none;
+  }
+  a
+  {
+    text-decoration: none;
+    @include margin-bottom(0);
+  }
+  span
+  {
+    @include font-size(map-get($modular-scale, s));
+    font-family: $font-headings;
+  }
+}
