@@ -107,11 +107,18 @@ $-subscription-panel-height: 210px;
     display: flex;
     display: none;
 
+    *
+    {
+      @include margin(0,0);
+    }
+
 
     div
     {
       width: 100%;
       display: flex;
+      padding-top: 25%;
+      padding-bottom: 25%;
 
       border-left: solid 1px $black;
       border-top: solid 2px $black;
@@ -138,6 +145,7 @@ $-subscription-panel-height: 210px;
       {
         margin: auto;
         width: 50%;
+        height: auto;
         fill: $white;
       }
     }
