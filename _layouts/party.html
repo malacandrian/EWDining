@@ -1,0 +1,16 @@
+---
+  layout: archive
+  test: equals
+  testProperty: party
+---
+{% assign slug = (page.url | split: '/')|last %}
+{% for party in site.data.Parties.parties %}
+  {% if party.slug == slug %}
+    {% assign foundParty = party %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if foundParty %}
+  {{foundParty.description}}
+{% endif %}
