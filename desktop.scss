@@ -212,9 +212,7 @@ body
       max-width: 320px;
       box-sizing: content-box;
 
-      @include margin-top(2);
-      margin-left: 1rem;
-      margin-right: 0;
+      @include margin(2,0,0,1);
 
       .featuredStories
       {
