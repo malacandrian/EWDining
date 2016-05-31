@@ -23,16 +23,23 @@
  @import 'typography';
 
 
-html, body
+html
 {
   margin: 0;
   padding: 0;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  /* Background pattern from subtlepatterns.com */
-  background-image: url(/resources/images/tileable_wood_texture.png);
 }
 
+body
+{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  /* Background pattern from subtlepatterns.com */
+  background: url(/resources/images/coffee-stain.png), url(/resources/images/tileable_wood_texture.png);
+  background-repeat: no-repeat, repeat;
+  background-position: top -25px right -25px, top left;
+  background-size: 150px;
+}
  .main
  {
    width: 90%;
