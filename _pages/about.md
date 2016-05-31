@@ -1,8 +1,6 @@
 ---
-  layout: page
-  video: 6tguujLxDeA
+  layout: author-list
   title: About Us
   permalink: /about-us/
 ---
-
 Hello!

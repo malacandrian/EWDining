@@ -1,0 +1,43 @@
+Evan:
+  name: Evan Williams
+  picture: /resources/images/authors/evan.jpg
+  twitter: evan_williams
+  description: Rawr
+  email: evan@williams.ee
+
+Emma:
+  name: Emma Williams
+  picture: /resources/images/authors/emma.jpg
+  twitter: EWDining
+  description: stuff
+  email: emma@williams.ee
+
+Ocean:
+  name: Ocean
+  picture: /resources/images/authors/ocean.jpg
+  twitter: EWDining
+  description: Something about ocean
+
+Marky:
+  name: Marky
+  picture: /resources/images/authors/marky.jpg
+  twitter: EWDining
+  description: Marky Mark and the funky bunch
+
+Bobby:
+  name: Bobby
+  picture: /resources/images/authors/bobby.jpg
+  twitter: EWDining
+  description: Bobby is a gooody boy.
+
+MissRabby:
+  name: Miss Rabby
+  picture: /resources/images/authors/rabby.jpg
+  twitter: EWDining
+  description: Carrots!
+
+Monkey:
+  name: Cheeky Monkey
+  picture: /resources/images/authors/monkey.jpg
+  twitter: EWDining
+  description: Bananas Bananas Bananas Bananas Bananas
