@@ -112,6 +112,25 @@ body
    .mainmenu
    {
      order: 4;
+
+     display: flex;
+     flex-direction: column;
+     list-style: none;
+     width: 100%;
+     padding: 0;
+
+     li a
+     {
+       display: block;
+       @include margin-bottom(0);
+       width: 100%;
+       border: 1px solid $black;
+       background-color: $white;
+
+       text-align: center;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+     }
    }
 
    .footer
