@@ -1,0 +1,84 @@
+---
+---
+// @charset "utf-8";
+
+/*  Gutenberg Typography Styles
+ *  http://matejlatin.github.io/Gutenberg/
+ *
+ *  Copyright Matej Latin http://matejlatin.co.uk/
+ *  Licenced under Creative Commons Share-Alike 3.0
+ *  https://creativecommons.org/licenses/by-sa/3.0/
+ */
+@import 'gutenberg/src/style/gutenberg-reset';
+@import 'gutenberg/src/style/gutenberg-mixins';
+@import 'gutenberg/src/style/gutenberg-config';
+@import 'gutenberg/src/style/gutenberg-typography';
+@import 'gutenberg/src/style/gutenberg-style';
+
+
+ /* End of Gutenberg Typography */
+ @import 'colors';
+ @import 'mixins';
+ @import 'subscription-panel';
+ @import 'typography';
+
+
+html, body
+{
+  margin: 0;
+  padding: 0;
+  /* Background pattern from subtlepatterns.com */
+  background-image: url(/resources/images/tileable_wood_texture.png);
+}
+
+ .main
+ {
+   width: 100%;
+   padding: 1rem;
+   border: 1px solid $black;
+   @include margin(0.25,0.25);
+   box-sizing: border-box;
+   /* Background pattern from subtlepatterns.com */
+   background-image: url(/resources/images/paper_fibers.png);
+
+   .search
+   {
+     width: 100%;
+     display: flex;
+
+     * {
+       border: 2px solid $black;
+     }
+
+     input[type=search]
+     {
+       border-right: none;
+       flex-grow: 20;
+     }
+
+     input[type=submit] {
+       border-left: none;
+       background-color: $black;
+       color: $white;
+     }
+   }
+
+   .logo
+   {
+     width: 100%;
+     height: auto;
+   }
+
+   .frame
+   {
+     article
+     {
+       &, * {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        box-sizing: border-box;
+      }
+     }
+   }
+ }
