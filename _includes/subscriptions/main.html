@@ -16,8 +16,10 @@
     {% endif %}
   {% endfor %}
   {% capture numSubs %}{{Subscriptions.Services | size}}{% endcapture %}
+  {% assign height = 330|divided_by: numSubs %}
   <div
     class="-subscription-panel-secondary"
+    style="height: {{height}}px;"
     >
     {% for service in Subscriptions.Services %}
       <div
