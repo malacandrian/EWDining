@@ -9,14 +9,11 @@ $(document).ready(function (){
   $('.-subscription-panel-secondary').css('display','flex')
   $(secondaryItems[0]).addClass("active")
 
-  secondaryItems.on('mouseover click', function(){
+  secondaryItems.on('mouseover click', function(event){
     curPanel.hide();
     secondaryItems.removeClass('active')
 
     var source = $(event.target).closest("div")
-    /*if(source.prop('nodeName')==='SVG'){
-      source = source.parent()
-    }*/
     source.addClass('active')
 
     var id = source.attr('id').split('-').pop()
