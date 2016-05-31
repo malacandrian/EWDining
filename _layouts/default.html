@@ -6,7 +6,9 @@
   <body>
     <div class="main">
       <form class="search"><input type="search" value="Search" /><input type="submit" value="&#128269;" /></form>
-      {% include SVG/logo.svg %}
+      <a href="/">
+        {% include SVG/logo.svg %}
+      </a>
       {% include menu.html variable-param=site.data.Menu.Main%}
 
       <div class="frame">
@@ -18,7 +20,8 @@
         </div>
       </div>
       <div class="footer">
-        <span class="copyright">Copyright Evan and Emma Williams 2016</span>
+        <span class="copyright">Copyright Evan and Emma Williams 2016.</span>
+        <a href="https://williams.ee">https://williams.ee</a>
         {% include menu.html variable-param=site.data.Menu.Footer %}
       </div>
   </body>
