@@ -19,7 +19,7 @@
 @import 'typography';
 
 /* Hide uneeded sections */
-.sidebar, .search, .mainmenu, .endmenu, .youtube
+.sidebar, .search, .mainmenu, .endmenu, .youtube, .comments
 {
   display: none;
 }
@@ -29,12 +29,35 @@
 {
   height: 200px;
   width: auto;
+  margin: auto;
 }
 
 /* On-Page layout */
-.main, .footer
+.main
 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.footer
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  *
+  {
+    margin: auto;
+
+    &:first-child
+    {
+      margin-left: none;
+    }
+
+    &:last-child
+    {
+      margin-right: none;
+    }
+  }
 }
