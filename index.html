@@ -1,13 +1,3 @@
 ---
-layout: page
-permalink: index.html
+  layout: home-page
 ---
-{% for post in paginator.posts %}
-  {% include archive-item.html archive-item=post %}
-{% endfor %}
-{% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    <p>Jump to Page</p>
-    {% include paginator.html %}
-  </div>
-{% endif %}
