@@ -22,5 +22,7 @@ paginate_path: /:num/
 
 # Build settings
 markdown: kramdown
+include:
+  - _pages
 gems:
   - jekyll-paginate

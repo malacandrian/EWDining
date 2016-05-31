@@ -28,6 +28,9 @@ Footer:
   endContent: ""
   contents:
     -
+      text: Community Guidelines
+      link: /community/
+    -
       text: Privacy and Cookies Policy
       link: /privacy/
     -
