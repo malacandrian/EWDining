@@ -16,6 +16,13 @@ layout: page
     {% endif %}
   {% endif %}
 
+  {% comment %} Property doesn't exist test {% endcomment %}
+  {% if page.test == "notExists" %}
+    {% unless post[page.testProperty] %}
+      {% assign include-post = true %}
+    {% endunless %}
+  {% endif %}
+
   {% comment %} Property equals test {% endcomment %}
   {% if page.test == "equals" %}
     {% if post[page.testProperty] == page.testValue %}

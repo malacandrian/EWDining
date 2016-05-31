@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-05-15 15:44:21 +0100
 categories: jekyll update
+video: 6tguujLxDeA
 type: craft
 party: masquerade
 ---
