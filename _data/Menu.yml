@@ -8,8 +8,13 @@ Main:
       text: About Us
       link: /about-us/
     -
-      text: All Videos
+      text: Videos
       link: /videos/
+
+    -
+      text: Blogs
+      link: /blog/
+
     -
       text: Recipies
       link: /recipies/
