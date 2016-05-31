@@ -5,7 +5,11 @@
 {% assign Parties = site.data.Parties %}
 {% for party in Parties.parties %}
   <div class="party">
-    <h2>{{party.name}}</h2>
+    <h2>
+      <a href="{{site.data.Parties.path}}{{party.slug}}">
+        {{party.name}}
+      </a>
+    </h2>
     {% capture svg %}{{Parties.iconPath}}{{party.icon}}{% endcapture %}
     {% include {{svg}} %}
     <p>{{party.description}}</p>
