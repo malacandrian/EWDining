@@ -27,17 +27,20 @@ html, body
 {
   margin: 0;
   padding: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   /* Background pattern from subtlepatterns.com */
   background-image: url(/resources/images/tileable_wood_texture.png);
 }
 
  .main
  {
-   width: 100%;
+   width: 90%;
    padding: 1rem;
    border: 1px solid $black;
-   @include margin(0.25,0.25);
+   margin: auto;
    box-sizing: border-box;
+   box-shadow: 0.5rem 0.5rem fade-out($black, 0.8);
    /* Background pattern from subtlepatterns.com */
    background-image: url(/resources/images/paper_fibers.png);
 
@@ -82,3 +85,57 @@ html, body
      }
    }
  }
+
+ .parties
+ {
+   a
+   {
+     &:link, &:visited, &:hover, &:active
+     {
+       color: $black;
+     }
+   }
+   ul
+   {
+     display: flex;
+     flex-direction: column;
+     padding: 0;
+     list-style: none;
+
+     align-items: flex-start;
+     justify-content: flex-start;
+
+     li a
+     {
+       display: flex;
+       align-items: flex-start;
+       justify-content: flex-start;
+
+       *
+       {
+         margin-left: 0;
+         margin-right: 0;
+         margin-top: auto;
+         margin-bottom: auto;
+       }
+
+       svg
+       {
+         height: 3rem;
+         width: auto;
+       }
+
+       span
+       {
+         margin-left: 1rem;
+         flex-grow: 20;
+       }
+     }
+   }
+ }
+
+.endmenu
+{
+  list-style: none;
+  padding-left: 0;
+}
