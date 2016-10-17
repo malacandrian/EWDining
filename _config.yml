@@ -9,21 +9,37 @@
 title: Dining with the EW's
 email: ews@williams.ee
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to Dining with the EW's! We're enthusiasitic about hospitality, and want to encourage more people to get involved. Every month we'll teach you how to throw a great dinner party. New videos every Wednesday.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://williams.ee" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  malacandrian
+
 
 paginate: 5
 paginate_path: /:num/
 
+# SEO plugin settings
+logo: /resources/images/logo.png
+
+twitter_username: EWDining
+twitter:
+  username: EWDining
+facebook:
+  publisher: EWDining
+
+github_username:  malacandrian
+
 # Build settings
+encoding: utf-8
 markdown: kramdown
 include:
   - _pages
+exclude:
+  - .gitignore
+  - .gitmodules
+  - CNAME
+  - LICENSE.md
+  - README.md
 gems:
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-sitemap
