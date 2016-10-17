@@ -12,6 +12,18 @@ Emma:
   description:
   email: emma@williams.ee
 
+Jelly:
+  name: Jelly Jackson
+  picture: /resources/images/authors/jelly.jpg
+  twitter: EWDining
+  description:
+
+Jackson:
+  name: Wing Commander Alfred Jackson
+  picture: /resources/images/authors/jackson.jpg
+  twitter: EWDining
+  description:
+
 Ocean:
   name: Ocean
   picture: /resources/images/authors/ocean.jpg
