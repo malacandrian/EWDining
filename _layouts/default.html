@@ -9,11 +9,15 @@
       <a href="/">
         {% include SVG/logo.svg %}
       </a>
-      {% include menu.html variable-param=site.data.Menu.Main%}
+      {% include menu.html variable-param=site.data.Menu.Main %}
 
       <div class="frame">
         <div class="content">
           {{ content }}
+
+          {% if page.comments %}
+            {% include comments.html %}
+          {% endif %}
         </div>
         <div class="sidebar">
           {% include sidebar.html %}
