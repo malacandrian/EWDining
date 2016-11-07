@@ -1,0 +1,73 @@
+Self-Raising Flour:
+ measurement: gram
+ dietry-requirements:
+   - Gluten
+
+Baking Powder:
+  measurement: teaspoon
+
+Caster Sugar:
+  measurement: gram
+
+Milk:
+  measurement: mililitre
+  dietry-requirements:
+   - Lactose
+   - Vegan
+  replacements:
+    -
+      item: Goats' Milk
+      proportion: Replace the milk 1:1.
+      comment: Goat's milk has a slight flavour to it, and a lower fat content than cows' milk. Goat's milk still contains some lactose, so may not be appropriate for all lactose intolerant people.
+      suitable-for:
+        - Lactose
+    -
+      item: Soy Milk
+      proportion: Replace the milk 1:1.
+      comment: This is probably the most common, and easiest to find milk substitute. The exact flavour and consistency varies between brands, so some experimentation will be necessary. Soy has a stronger flavour than other milk substitutes, so may not be suitable for more deilcate dishes.
+      suitable-for:
+        - Lactose
+        - Vegan
+    -
+      item: Rice Milk
+      proportion: Replace the milk 1:1.
+      comment: Many claim rice milk has the most similar flavour to cow's milk. It is slightly sweeter, so consider reducing the amount of sugar or other sweeteners (e.g. honey/syrup) in the recipe.
+      suitable-for:
+        - Lactose
+        - Vegan
+
+Sunflower Oil:
+  measurement: teaspoon
+
+Egg:
+  dietry-requirements:
+    - Vegan
+  replacements:
+    -
+      item: Egg Replacer
+      proportion: As directed on the box.
+      comment: Good all-round replacement for eggs, but is more expensive than other options. Has a very mild metallic taste.
+      suitable-for:
+        - Vegan
+    -
+      item: Flaxseed
+      quantity: 10g ground flaxseed and 50mL water per egg.
+      comment: Has a strong flavour, best used with whole-grain flours.
+      suitable-for:
+        - Vegan
+    -
+      item: Silken Tofu
+      quantity: 65g per egg.
+      comment: Very dense, so avoid with lighter/fluffier dishes.
+      suitable-for:
+        - Vegan
+    -
+      item: Baking Soda and Vinegar
+      quantity: 15mL vinegar and 5g baking soda per egg.
+      comment: Good for fluffier baked goods.
+      suitable-for:
+        - Vegan
+  plural: Eggs
+
+Lemon:
+  plural: Lemons

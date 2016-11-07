@@ -33,6 +33,7 @@ encoding: utf-8
 markdown: kramdown
 include:
   - _pages
+  - _posts
 exclude:
   - .gitignore
   - .gitmodules

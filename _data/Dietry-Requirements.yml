@@ -1,0 +1,42 @@
+iconPath: /resources/images/dietry-requirements/
+dietry-requirements:
+  -
+    name: Gluten
+    safe: Gluten Free
+    icon: gluten.svg
+    icon-credit:
+      author: Lorc
+      url: http://game-icons.net/lorc/originals/oat.html
+      licence: CC-BY http://creativecommons.org/licenses/by/3.0/
+  -
+    name: Lactose
+    safe: Lactose Free
+    icon: lactose.svg
+    icon-credit:
+      author: Evgeniy Artsebasov
+      url: https://thenounproject.com/search/?q=milk&i=57415
+      licence: CC-BY http://creativecommons.org/licenses/by/3.0/
+  -
+    name: Vegetarian
+    safe: Suitable for Vegetarians
+    icon: vegetarian.svg
+    icon-credit:
+      author: Matt Hawdon
+      url: https://thenounproject.com/term/vegetarian/28945/
+      licence: CC-BY http://creativecommons.org/licenses/by/3.0/
+  -
+    name: Peskitarian
+    safe: Suitable for Peskitarians
+    icon: peskitarian.svg
+    icon-credit:
+      author: Andrey Vasiliev
+      url: https://thenounproject.com/search/?q=fish&i=649366
+      licence: CC-BY http://creativecommons.org/licenses/by/3.0/
+  -
+    name: Vegan
+    safe: Suitable for Vegans
+    icon: vegan.svg
+    icon-credit:
+      author: Xinh Studio
+      url: https://thenounproject.com/term/vegan/446687/
+      licence: CC-BY http://creativecommons.org/licenses/by/3.0/

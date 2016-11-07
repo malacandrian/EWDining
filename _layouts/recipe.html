@@ -6,3 +6,89 @@ seo:
   type: Recipe
 ---
 {{ content }}
+<h2>Recipe</h2>
+<div class="dietry-requirements">
+  {% assign requirements = site.data.Dietry-Requirements.dietry-requirements %}
+  {% assign restrictions = "" | split: "" %}
+
+  {% comment %}
+    Build a list of dangers in the recipe
+  {% endcomment %}
+
+  {% for ingredient in page.recipe.ingredients %}
+    {% assign ingredient-detail = site.data.Ingredients[ingredient.item] %}
+    {% if ingredient-detail.dietry-requirements %}
+      {% for restriction in ingredient-detail.dietry-requirements %}
+        {% assign restrictions = restrictions | push: restriction %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign restrictions = restrictions | uniq %}
+
+  {% comment %}
+    Build a list of dietry restrictions that this recipe follows
+  {% endcomment %}
+  {% assign allowed = "" | split: "" %}
+
+  {% for requirement in requirements %}
+  {% assign isSafe = true %}
+  {% for restriction in restrictions %}
+    {% if requirement.name == restriction %}
+      {% assign isSafe = false %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% if isSafe %}
+    {% assign allowed = allowed | push: requirement %}
+  {% endif %}
+  {% endfor%}
+
+  <div class="recipe-dietry-requirements">
+    {% for requirement in allowed %}
+      <img
+        src="{{site.data.Dietry-Requirements.iconPath}}{{requirement.icon}}"
+        alt="{{requirement.safe}}"
+        title="{{requirement.safe}}"
+        />
+      {% if requirement.icon-credit %}
+        <!--
+          Icon Credit:
+            {{ requirement.icon-credit-author }}
+            {{ requirement.icon-credit.url }}
+            {{ requirement.icon-credit.licence }}
+        -->
+      {% endif %}
+    {% endfor %}
+  </div>
+
+
+</div>
+<h3>Ingredients</h3>
+<ul class="recipe-ingredients">
+  {% for ingredient in page.recipe.ingredients %}
+    {% assign ingredient-detail = site.data.Ingredients[ingredient.item] %}
+    <li>
+      <span class="recipe-ingredient-item">{{ ingredient.item }}</span>
+      <span class="recipe-ingredient-quantity">{{ ingredient.quantity }}</span>
+      {% if ingredient-detail.measurement %}
+        {% assign measurement = ingredient-detail.measurement %}
+        <span class="recipe-ingredient-measurement">{{ site.data.Measurements[measurement].symbol }}</span>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+<h3>Method</h3>
+<ol class="recipe-method">
+  {% for step in page.recipe.method %}
+    <li>
+      {{ step.text | markdownify }}
+      {% if step.extra %}
+        <span class="extra">
+          {{ step.extra | markdownify }}
+        </span>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ol>

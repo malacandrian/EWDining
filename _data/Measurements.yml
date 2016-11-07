@@ -1,0 +1,11 @@
+gram:
+   plural: grams
+   symbol: g
+
+teaspoon:
+  plural: teaspoons
+  symbol: tsp
+
+mililitre:
+  plural: mililitres
+  symbol: mL
