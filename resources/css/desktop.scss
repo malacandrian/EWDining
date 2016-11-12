@@ -338,12 +338,14 @@ body
 .recipe-dietry-requirements
 {
   text-align: center;
+  @include margin-bottom(0);
 
   img
   {
-    width: 64px;
-    height: 64px;
+    width: 5rem;
+    height: 5rem;
 
     display: inline;
+    @include margin-bottom(0);
   }
 }
