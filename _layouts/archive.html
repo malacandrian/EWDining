@@ -32,7 +32,7 @@ layout: page
 
   {% comment %} If the post has passed the test, include it {% endcomment %}
   {% if include-post %}
-    {% include archive-item.html archive-item=post %}
+    {% include archive-item.html archive-item=post archive-level=page.archive-level %}
     {% assign anyPosts = true %}
   {% endif %}
 

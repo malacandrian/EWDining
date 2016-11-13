@@ -17,6 +17,31 @@ url: "https://williams.ee" # the base hostname & protocol for your site
 paginate: 5
 paginate_path: /:num/
 
+# Collections
+collections:
+  parties:
+    output: true
+    permalink: /parties/:path/
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      archive-level: h1
+  -
+    scope:
+      path: ""
+      type: "parties"
+    values:
+      layout: archive
+      icon-root: parties/icons/
+      test: equals
+      testProperty: party
+      archive-level: h2
+
 # SEO plugin settings
 logo: /resources/images/logo.png
 

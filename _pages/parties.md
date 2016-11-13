@@ -1,6 +1,5 @@
 ---
   layout: party-list
-  title: Our Parties
   permalink: /parties/
+  title: Our Parties
 ---
-I'm going to tell you about our parties

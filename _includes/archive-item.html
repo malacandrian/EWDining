@@ -1,4 +1,8 @@
-<h1><a href="{{include.archive-item.url}}">{{include.archive-item.title}}</a></h1>
+<{{include.archive-level}}>
+  <a href="{{include.archive-item.url}}">
+    {{include.archive-item.title}}
+  </a>
+</{{include.archive-level}}>
 {% if include.archive-item.video %}
   <div class="youtube">
     <iframe src="https://www.youtube.com/embed/{{include.archive-item.video}}" frameborder="0" allowfullscreen></iframe>

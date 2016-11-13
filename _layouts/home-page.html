@@ -3,7 +3,7 @@ layout: page
 permalink: index.html
 ---
 {% for post in paginator.posts %}
-  {% include archive-item.html archive-item=post %}
+  {% include archive-item.html archive-item=post archive-level="h1" %}
 {% endfor %}
 {% if paginator.total_pages > 1 %}
   <div class="pagination">
