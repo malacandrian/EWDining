@@ -29,7 +29,7 @@ defaults:
       path: ""
       type: "pages"
     values:
-      archive-level: h1
+      archive-level: h2
   -
     scope:
       path: ""

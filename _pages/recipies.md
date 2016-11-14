@@ -4,4 +4,5 @@ test: equals
 testProperty: type
 testValue: recipe
 permalink: /recipies
+title: recipes
 ---
