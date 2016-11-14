@@ -1,6 +1,6 @@
 ---
   layout: author-list
   title: About Us
-  permalink: /about-us/
+  permalink: /about-us
 ---
 Hello!

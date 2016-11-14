@@ -6,27 +6,27 @@ Main:
        link: /
     -
       text: About Us
-      link: /about-us/
+      link: /about-us
     -
       text: Videos
-      link: /videos/
+      link: /videos
 
     -
       text: Blogs
-      link: /blog/
+      link: /blog
 
     -
       text: Recipies
-      link: /recipies/
+      link: /recipies
     -
       text: Crafts
-      link: /crafts/
+      link: /crafts
     -
       text: Party Themes
-      link: /themes/
+      link: /themes
     -
       text: Puppets
-      link: /puppets/
+      link: /puppets
 
 Footer:
   class: endmenu
@@ -34,10 +34,10 @@ Footer:
   contents:
     -
       text: Community Guidelines
-      link: /community/
+      link: /community
     -
       text: Privacy and Cookies Policy
-      link: /privacy/
+      link: /privacy
     -
       text: Contact Us
-      link: /contact/
+      link: /contact

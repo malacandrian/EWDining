@@ -1,5 +1,5 @@
 ---
   layout: party-list
-  permalink: /parties/
+  permalink: /parties
   title: Our Parties
 ---

@@ -14,10 +14,16 @@ paginate_path: /:num/
 collections:
   parties:
     output: true
-    permalink: /parties/:path/
+    permalink: /parties/:path
 
 # Defaults
 defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /parties/:categories/:slug
   -
     scope:
       path: ""
