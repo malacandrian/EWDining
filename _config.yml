@@ -24,6 +24,7 @@ defaults:
       type: "posts"
     values:
       permalink: /parties/:categories/:slug
+      comments: true
   -
     scope:
       path: ""
