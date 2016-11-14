@@ -10,11 +10,9 @@ Main:
     -
       text: Videos
       link: /videos
-
     -
       text: Blogs
       link: /blog
-
     -
       text: Recipies
       link: /recipies

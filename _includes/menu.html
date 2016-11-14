@@ -1,5 +1,7 @@
-<ul class="{{include.variable-param.class}}">
-  {% for MenuItem in include.variable-param.contents %}
-    <li><a href='{{MenuItem.link}}'>{{MenuItem.text}}</a></li>
-  {% endfor %}
-</ul>
+<nav>
+  <ul class="{{include.variable-param.class}}">
+    {% for MenuItem in include.variable-param.contents %}
+      <li><a href='{{MenuItem.link}}'>{{MenuItem.text}}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
