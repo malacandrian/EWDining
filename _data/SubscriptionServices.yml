@@ -7,7 +7,7 @@ Services:
       id: youtube
       icon: youtube.svg
       color: hsla(358,79%,45%,1)
-      action: https://www.youtube.com/user/evanrwilliams?sub_confirmation=1
+      action: https://www.youtube.com/channel/UCGQkVFQr_MFkiuNj_k-Bw9g?sub_confirmation=1
       order: 0
       contents: simple.html
       call: Subscribe
@@ -39,7 +39,7 @@ Services:
       id: rss
       icon: rss.svg
       color: hsla(24,100%,50%,1)
-      action: feed.xml
+      action: /feed.xml
       order: 20
       contents: simple.html
       call: Subscribe
@@ -50,7 +50,7 @@ Services:
       id: Twitter
       icon: twitter.svg
       color: hsla(206,82%,63%,1)
-      action: https://twitter.com/evan_williams
+      action: https://twitter.com/EWDining
       order: 7
       contents: simple.html
       call: Follow Us
@@ -65,6 +65,7 @@ Services:
       contents: simple.html
       call: Find Us
       preposition: "on"
+      action: https://www.facebook.com/EWDining/
 
     -
       name: Pinterest
@@ -75,3 +76,4 @@ Services:
       contents: simple.html
       call: Follow Us
       preposition: "on"
+      action: https://pinterest.com/EWDining
