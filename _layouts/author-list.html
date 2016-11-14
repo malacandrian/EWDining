@@ -2,10 +2,7 @@
   layout: page
 ---
 {{content}}
-{% for author in site.data.authors %}
-  <div class="author-card">
-    <h2>{{author[1].name}}</h2>
-    <img src="{{author[1].image}}" />
-    <p>{{author[1].description}}</p>
-  </div>
+{% assign authors = site.authors | sort: "sort-order" %}
+{% for author in authors %}
+  {% include author-card.html author=author %}
 {% endfor %}

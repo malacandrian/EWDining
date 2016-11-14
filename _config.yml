@@ -15,6 +15,9 @@ collections:
   parties:
     output: true
     permalink: /parties/:path
+  authors:
+    output: true
+    permalink: /authors/:path
 
 # Defaults
 defaults:
@@ -41,6 +44,18 @@ defaults:
       test: equals
       testProperty: party
       archive-level: h2
+  -
+    scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: archive
+      test: equals
+      testProperty: author
+      archive-level: h2
+      picture-root: /resources/images/authors/
+      twitter: EWDining
+
 
 # SEO plugin settings
 logo: /resources/images/logo.png

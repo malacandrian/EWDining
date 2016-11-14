@@ -1,0 +1,21 @@
+<div class="author-card">
+  <h2>
+    <a
+      href="{{ include.author.url }}"
+      {% if include.author.isAuthor %}
+        rel="author"
+      {% endif %}
+      >
+      {{include.author.name}}
+    </a>
+  </h2>
+  <img
+    class="author-image"
+    src="{{include.author.picture-root}}{{include.author.picture}}"
+    />
+  <span class="author-email">
+    {{ include.author.email }}
+  </span>
+
+  {{ include.author.content }}
+</div>
