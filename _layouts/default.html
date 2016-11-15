@@ -9,7 +9,7 @@
       <a href="/">
         {% include SVG/logo.svg %}
       </a>
-      {% include menu.html variable-param=site.data.Menu.Main %}
+      {% include menu.html menu=site.data.Menu.Main %}
 
       <div class="frame">
         <div class="content">
@@ -23,7 +23,7 @@
       <div class="footer">
         <span class="copyright">Copyright Evan and Emma Williams 2016.</span>
         <a href="https://williams.ee">https://williams.ee</a>
-        {% include menu.html variable-param=site.data.Menu.Footer %}
+        {% include menu.html menu=site.data.Menu.Footer %}
       </div>
   </body>
 </html>
