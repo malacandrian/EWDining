@@ -44,6 +44,7 @@ defaults:
       test: equals
       testProperty: party
       archive-level: h2
+      comments: true
   -
     scope:
       path: ""
