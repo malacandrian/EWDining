@@ -2,6 +2,11 @@ Self-Raising Flour:
  measurement: gram
  dietry-requirements:
    - Gluten
+  replacements:
+    -
+      item: Gluten Free Self-Raising Flour
+      proportion: Replace the flour 1:1 by volume (as each flour has a different density)
+      comment: This is worth experimenting with as the end result can be very dry or crumbly.
 
 Baking Powder:
   measurement: teaspoon
