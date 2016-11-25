@@ -1,0 +1,16 @@
+<object
+  type="image/svg+xml"
+  data="{{site.data.Dietry-Requirements.iconPath}}{{include.requirement.icon}}"
+  title="{{include.requirement.safe}}"
+  class="{{include.class}}"
+  >
+  {{include.requirement.safe}}
+</object>
+{% if include.requirement.icon-credit %}
+  <!--
+    Icon Credit:
+      {{ include.requirement.icon-credit-author }}
+      {{ include.requirement.icon-credit.url }}
+      {{ include.requirement.icon-credit.licence }}
+  -->
+{% endif %}
