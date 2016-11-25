@@ -61,6 +61,39 @@ type: recipe
         {% assign measurement = ingredient-detail.measurement %}
         <span class="recipe-ingredient-measurement">{{ site.data.Measurements[measurement].symbol }}</span>
       {% endif %}
+      {% if ingredient-detail.dietry-requirements %}
+        <ul class="recipe-ingredient-dangers">
+          {% for requirement in ingredient-detail.dietry-requirements %}
+            <li>
+              <br />
+              {% assign requirement-detail = requirements[requirement] %}
+              {% include requirement-icon.html requirement=requirement-detail class="recipe-danger-icon" %}
+            </li>
+          {% endfor %}
+        </ul>
+        <ul class="recipe-ingredient-substitutions">
+          {% for substitution in ingredient-detail.replacements %}
+            <li>
+              <h4>{{substitution.item}}</h4>
+              {{substitution.comment}}
+              <div class="recipe-ingredient-substitution-detail">
+                <strong>Proportion:</strong>
+                {{substitution.proportion}}
+              </div>
+              <div class="recipe-ingredient-substitution-detail">
+                <strong>Suitable for:</strong>
+                <ul class="recipe-ingredient-substitution-suitability">
+                  {% for item in substitution.suitable-for %}
+                    <li>
+                      {{item}}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
