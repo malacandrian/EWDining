@@ -31,14 +31,14 @@ type: recipe
   {% for requirement in requirements %}
   {% assign isSafe = true %}
   {% for restriction in restrictions %}
-    {% if requirement.name == restriction %}
+    {% if requirement[0] == restriction %}
       {% assign isSafe = false %}
       {% break %}
     {% endif %}
   {% endfor %}
 
   {% if isSafe %}
-    {% assign allowed = allowed | push: requirement %}
+    {% assign allowed = allowed | push: requirement[1] %}
   {% endif %}
   {% endfor%}
 
