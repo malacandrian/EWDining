@@ -2,6 +2,7 @@
   layout: page
 ---
 {{content}}
+<h2>Who's Who?</h2>
 {% assign authors = site.authors | sort: "sort-order" %}
 {% for author in authors %}
   {% include author-card.html author=author %}
