@@ -61,7 +61,11 @@ defaults:
       path: "_sass"
     values:
       permalink: /resources/css/:basename.css
-
+  -
+    scope:
+      path: "_scripts"
+    values:
+      permalink: /resources/js/:basename.js
 
 # SEO plugin settings
 logo: /resources/images/logo.png
@@ -81,6 +85,7 @@ include:
   - _pages
   - _posts
   - _sass
+  - _scripts
 exclude:
   - .gitignore
   - .gitmodules

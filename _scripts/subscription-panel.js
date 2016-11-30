@@ -1,3 +1,5 @@
+---
+---
 $(document).ready(function (){
   var panels = $('.-subscription-panel-main');
   var curPanel = $(panels[0]);
