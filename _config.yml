@@ -95,6 +95,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .jekyll-metadata
+  #Prevent SASS libraries from generating pages (They can still be referenced/imported)
+  - _sass/libraries/
 gems:
   - jekyll-paginate
   - jekyll-seo-tag
