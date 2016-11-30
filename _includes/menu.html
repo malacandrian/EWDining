@@ -1,5 +1,5 @@
-<nav>
-  <ul class="{{include.menu.class}}">
+<nav class="{{include.menu.class}}">
+  <ul>
     {% for MenuItem in include.menu.contents %}
       <li><a href='{{MenuItem.link}}'>{{MenuItem.text}}</a></li>
     {% endfor %}
