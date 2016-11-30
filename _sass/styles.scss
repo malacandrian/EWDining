@@ -3,35 +3,35 @@
 @charset "UTF-8";
 
 //Establish variables/functions/mixins/etc
-@import 'mixins';
-@import 'variables';
-@import 'colors';
+@import 'variables/variables';
+@import 'variables/colors';
+@import 'variables/mixins';
 
 //Import general styles
-@import 'reset';
-@import 'typography';
+@import 'general/reset';
+@import 'general/typography';
 
-//Import display-dependant styles
+//Import media-specific styles
 @media screen
 {
   //Import styles common to all screens
-  @import 'visual-structure';
-  @import 'subscription-panel';
+  @import 'media/visual-structure';
+  @import 'media/subscription-panel';
 
   //Import mobile-only styles
   @media (max-width: 699px)
   {
-    @import 'mobile';
+    @import 'media/mobile';
   }
 
   //Import desktop/tablet-only styles
   @media (min-width: 700px)
   {
-    @import 'desktop';
+    @import 'media/desktop';
   }
 }
 
 @media print
 {
-  @import 'print';
+  @import 'media/print';
 }
