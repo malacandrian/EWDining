@@ -5,6 +5,11 @@
   @return $baseFontSize * $num;
 }
 
+@function modular-scale($scale)
+{
+  @return poly-pow($scaleRoot,$scale);
+}
+
 // Scale the font size and line height as a proportion of the default sizes
 @mixin font-scale($scale)
 {
@@ -22,4 +27,9 @@
   //  The steps are reduced to a fraction of a line by multiplying scale by lineDivisions wherever it appears
   //  Scale is divided out at the end so the resultant line height is relative to the scaled font, rather than the base font-scale
   line-height: ($lineHeight * ceil($scale * $lineDivisions / $lineHeight))/($scale * $lineDivisions);
+}
+
+@mixin font-modular-scale($scale)
+{
+  @include font-scale(modular-scale($scale));
 }
