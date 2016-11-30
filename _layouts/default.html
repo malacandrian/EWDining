@@ -4,15 +4,15 @@
 <html>
   {% include head.html %}
   <body>
-    <div class="main">
+    <div class="frame">
       <form class="search"><input type="search" value="Search" /><input type="submit" value="&#128269;" /></form>
       <a href="/">
         {% include SVG/logo.svg %}
       </a>
       {% include menu.html menu=site.data.Menu.Main %}
 
-      <div class="frame">
-        <main class="content">
+      <div class="content">
+        <main>
           {{ content }}
           {% include comments.html %}
         </main>

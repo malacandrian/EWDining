@@ -1,5 +1,5 @@
 Main:
-  class: mainmenu
+  class: main-menu
   contents:
     -
        text: Home
