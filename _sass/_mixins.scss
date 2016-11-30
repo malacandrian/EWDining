@@ -1,30 +1,10 @@
-@mixin aspect-ratio($width, $height) {
-    position: relative;
-    &::before{
-        display: block;
-        content: " ";
-        width: 100%;
-        padding-top: ($height / $width) * 100%;
-    }
-
-    > .content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
+@mixin font-scale($scale)
+{
+  font-size: $baseFontSize * $scale;
+  line-height: ($lineHeight * ceil($scale * 2 / $lineHeight))/($scale * 2);
 }
 
-@function stripes($angle, $color1, $color2, $width, $ratio)
+@function line-measure($num)
 {
-  $width2: ($width * $ratio) + $width;
-
-  @return repeating-linear-gradient(
-    $angle,
-    $color1,
-    $color1 $width,
-    $color2 $width,
-    $color2 $width2
-  );
+  @return $baseFontSize * $num;
 }

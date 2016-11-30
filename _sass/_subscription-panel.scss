@@ -8,7 +8,7 @@ $-subscription-panel-height: 210px;
 
   *
   {
-    @include margin(0,0);
+    margin: 0;
   }
 
 
@@ -109,7 +109,7 @@ $-subscription-panel-height: 210px;
 
     *
     {
-      @include margin(0,0);
+      margin: 0;
     }
 
 

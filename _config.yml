@@ -56,6 +56,11 @@ defaults:
       archive-level: h2
       picture-root: /resources/images/authors/
       twitter: EWDining
+  -
+    scope:
+      path: "_sass"
+    values:
+      permalink: /resources/css/:basename.css
 
 
 # SEO plugin settings
@@ -75,6 +80,7 @@ markdown: kramdown
 include:
   - _pages
   - _posts
+  - _sass
 exclude:
   - .gitignore
   - .gitmodules

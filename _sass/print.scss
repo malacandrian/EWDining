@@ -2,21 +2,8 @@
 ---
 @charset "utf-8";
 
-/*  Gutenberg Typography Styles
- *  http://matejlatin.github.io/Gutenberg/
- *
- *  Copyright Matej Latin http://matejlatin.co.uk/
- *  Licenced under Creative Commons Share-Alike 3.0
- *  https://creativecommons.org/licenses/by-sa/3.0/
- */
-@import 'gutenberg/src/style/gutenberg-reset';
-@import 'gutenberg/src/style/gutenberg-mixins';
-@import 'gutenberg/src/style/gutenberg-config';
-@import 'gutenberg/src/style/gutenberg-typography';
-@import 'gutenberg/src/style/gutenberg-style';
 
 @import 'colors';
-@import 'typography';
 
 /* Hide uneeded sections */
 .sidebar, .search, .mainmenu, .endmenu, .youtube, .comments
