@@ -22,7 +22,7 @@ main
 
     li
     {
-      @include font-scale(1.75);
+      @include font-modular-scale(3);
       flex-grow: 1;
       text-align: center;
     }
