@@ -30,8 +30,8 @@ body
   width: calc(100% - 4rem);
   max-width: 90rem;
 
-  margin: 2rem;
-  padding: 1rem;
+  margin: line-measure(2);
+  padding: line-measure(1);
 
   background-color: $white;
   /* Background pattern from subtlepatterns.com */
@@ -47,10 +47,10 @@ body
 
 .search
 {
-  height: 3.2rem;
+  height: line-measure(2);
   width: 100%;
   max-width: 30rem;
-  
+
   *
   {
     border: 3px solid $black;
@@ -91,4 +91,9 @@ body
 main
 {
     width: 100%;
+}
+
+.content
+{
+  width: 100%;
 }
