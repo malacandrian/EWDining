@@ -92,6 +92,9 @@ exclude:
   - CNAME
   - LICENSE.md
   - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-metadata
 gems:
   - jekyll-paginate
   - jekyll-seo-tag
