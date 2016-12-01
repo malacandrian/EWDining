@@ -1,0 +1,108 @@
+.recipe
+{
+  border: 2px solid $black;
+  padding: line-measure(1);
+  margin-top: line-measure(1);
+
+  background-color: transparentize($white, 0.2);
+}
+
+.recipe-dietry-requirements
+{
+  text-align: center;
+}
+
+.recipe-safe-icon
+{
+  width: auto;
+  height: line-measure(3);
+  margin: line-measure(1);
+}
+
+
+.recipe-ingredients
+{
+  list-style-type: square;
+  list-style-position: inside;
+  column-width: 20rem;
+
+  > li
+  {
+    //display: flex;
+    > *
+    {
+      display: inline-flex;
+    }
+  }
+}
+
+.recipe-ingredient-item
+{
+  font-weight: bold;
+
+  &::after
+  {
+    content: ' – '
+  }
+}
+
+.recipe-ingredient-dangers
+{
+  display: flex;
+
+  &::after
+  {
+    content: '▼';
+  }
+}
+
+.recipe-danger-icon
+{
+  height: line-measure(1);
+}
+
+.recipe-ingredient-substitutions
+{
+  display: none;
+
+  border: 1px solid $black;
+  background-color: $grey4;
+  padding: 1em;
+
+  flex-direction: column;
+}
+
+.recipe-ingredient-substitution-suitability
+{
+  display: inline-flex;
+  li
+  {
+    &::before
+    {
+      content: ',';
+    }
+
+    &:first-child::before
+    {
+      content: none;
+    }
+  }
+}
+
+.recipe-method
+{
+  list-style-type: decimal;
+  margin-left: 2rem;
+
+  li
+  {
+    font-family: $headerFont;
+    @include font-modular-scale(2);
+
+    *
+    {
+      font-family: $bodyFont;
+      @include font-modular-scale(0);
+    }
+  }
+}
