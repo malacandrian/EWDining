@@ -51,7 +51,7 @@ body
   width: 100%;
   max-width: 30rem;
 
-  *
+  > *
   {
     border: 3px solid $black;
     height: 100%;
@@ -81,7 +81,7 @@ body
 {
   width: 100%;
 
-  ul
+  > ul
   {
     width: 100%;
     display: flex;
