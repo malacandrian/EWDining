@@ -1,25 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 50" version="1.1"
-x="0px"
-y="0px"><title>031-vegan-vegetarian-eat-restaurant-food-leaf</title><desc>Created
-with Sketch.</desc><g stroke="none" stroke-width="1" fill="none"
-fill-rule="evenodd"><g transform="translate(-40.000000, -280.000000)"
-fill="#000000"><g transform="translate(42.000000, 202.000000)"><g
-transform="translate(0.000000, 80.000000)"><path d="M18,36 C27.9411255,36
-36,27.9411255 36,18 C36,8.0588745 27.9411255,0 18,0 C8.0588745,0 0,8.0588745
-0,18 C0,27.9411255 8.0588745,36 18,36 Z M16,6.49100518 C16,6.21983051
-16.2319336,6 16.5,6 C16.7761424,6 17,6.22241849 17,6.50756836 L17,11.4931638
-C17.0014225,11.5908341 16.9743045,11.689931 16.9160251,11.7773501 L15,14.6513878
-L15,28.4991699 C15,29.3280555 14.3342028,30 13.5,30 C12.6715729,30 12,29.3274305
-12,28.4991699 L12,14.6513878 L10.0839749,11.7773501 C10.0256955,11.689931
-9.99857746,11.5908341 10,11.4931638 L10,6.50756836 C10,6.2272461 10.2319336,6
-10.5,6 C10.7761424,6 11,6.22788048 11,6.49100518 L11,10 C11,10.5522847
-11.4477153,11 12,11 C12.5522847,11 13,10.5522847 13,10 L13,6.49769878
-C13,6.22282734 13.2319336,6 13.5,6 C13.7761424,6 14,6.21484375 14,6.49769878
-L14,10 C14,10.5522847 14.4477153,11 15,11 C15.5522847,11 16,10.5522847 16,10
-L16,6.49100518 Z M20.455737,16.9368098 C20.6135077,16.9273587
-22.7126465,15.2053223 21.8439941,9.42333984 C24.0477295,14.8995361 21,18 21,18
-L21,28.9975267 C21,29.5511774 21.4438648,30 22,30 C22.5522847,30 23,29.5525106
-23,29.0014977 L23,17 C24.8119233,16.815934 26,16.0135188 26,13.5 C26,11.4813448
-25.3505859,7.84448242 20.1025391,6 C20.6025391,10.526123 18,10.4624339 18,13.5
-C18,15.9660183 19.4008789,17 20.455737,16.9368098 Z"/></g></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 36 36"
+   version="1.1"
+   x="0px"
+   y="0px"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="vegan.svg"
+   width="36"
+   height="36">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>031-vegan-vegetarian-eat-restaurant-food-leaf</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     id="namedview18"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="4.72"
+     inkscape:cx="15.669492"
+     inkscape:cy="13"
+     inkscape:window-x="131"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <title
+     id="title4">031-vegan-vegetarian-eat-restaurant-food-leaf</title>
+  <desc
+     id="desc6">Created
+with Sketch.</desc>
+  <g
+     id="g8"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1"
+     transform="translate(-2,-2)">
+    <g
+       transform="translate(-40,-280)"
+       id="g10"
+       style="fill:#000000">
+      <g
+         transform="translate(42,202)"
+         id="g12">
+        <g
+           transform="translate(0,80)"
+           id="g14">
+          <path
+             d="M 18,36 C 27.941125,36 36,27.941125 36,18 36,8.0588745 27.941125,0 18,0 8.0588745,0 0,8.0588745 0,18 0,27.941125 8.0588745,36 18,36 Z M 16,6.4910052 C 16,6.2198305 16.231934,6 16.5,6 16.776142,6 17,6.2224185 17,6.5075684 l 0,4.9855956 c 0.0014,0.09767 -0.0257,0.196767 -0.08397,0.284186 L 15,14.651388 15,28.49917 C 15,29.328056 14.334203,30 13.5,30 12.671573,30 12,29.32743 12,28.49917 L 12,14.651388 10.083975,11.77735 C 10.025695,11.689931 9.9985775,11.590834 10,11.493164 L 10,6.5075684 C 10,6.2272461 10.231934,6 10.5,6 10.776142,6 11,6.2278805 11,6.4910052 L 11,10 c 0,0.552285 0.447715,1 1,1 0.552285,0 1,-0.447715 1,-1 L 13,6.4976988 C 13,6.2228273 13.231934,6 13.5,6 13.776142,6 14,6.2148437 14,6.4976988 L 14,10 c 0,0.552285 0.447715,1 1,1 0.552285,0 1,-0.447715 1,-1 L 16,6.4910052 Z M 20.455737,16.93681 c 0.157771,-0.0095 2.25691,-1.731488 1.388257,-7.5134702 C 24.047729,14.899536 21,18 21,18 l 0,10.997527 C 21,29.551177 21.443865,30 22,30 c 0.552285,0 1,-0.447489 1,-0.998502 L 23,17 c 1.811923,-0.184066 3,-0.986481 3,-3.5 C 26,11.481345 25.350586,7.8444824 20.102539,6 20.602539,10.526123 18,10.462434 18,13.5 c 0,2.466018 1.400879,3.5 2.455737,3.43681 z"
+             id="path16"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
