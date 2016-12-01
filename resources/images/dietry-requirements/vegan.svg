@@ -7,14 +7,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 36 36"
+   viewBox="0 0 20.20562 36"
    version="1.1"
    x="0px"
    y="0px"
    id="svg2"
    inkscape:version="0.91 r13725"
    sodipodi:docname="vegan.svg"
-   width="36"
+   width="20.20562"
    height="36">
   <metadata
      id="metadata22">
@@ -47,38 +47,25 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="4.72"
-     inkscape:cx="15.669492"
-     inkscape:cy="13"
+     inkscape:zoom="9.44"
+     inkscape:cx="6.3200558"
+     inkscape:cy="20.283881"
      inkscape:window-x="131"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2" />
+     inkscape:current-layer="svg2"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-page="true" />
   <title
      id="title4">031-vegan-vegetarian-eat-restaurant-food-leaf</title>
   <desc
      id="desc6">Created
 with Sketch.</desc>
-  <g
-     id="g8"
-     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1"
-     transform="translate(-2,-2)">
-    <g
-       transform="translate(-40,-280)"
-       id="g10"
-       style="fill:#000000">
-      <g
-         transform="translate(42,202)"
-         id="g12">
-        <g
-           transform="translate(0,80)"
-           id="g14">
-          <path
-             d="M 18,36 C 27.941125,36 36,27.941125 36,18 36,8.0588745 27.941125,0 18,0 8.0588745,0 0,8.0588745 0,18 0,27.941125 8.0588745,36 18,36 Z M 16,6.4910052 C 16,6.2198305 16.231934,6 16.5,6 16.776142,6 17,6.2224185 17,6.5075684 l 0,4.9855956 c 0.0014,0.09767 -0.0257,0.196767 -0.08397,0.284186 L 15,14.651388 15,28.49917 C 15,29.328056 14.334203,30 13.5,30 12.671573,30 12,29.32743 12,28.49917 L 12,14.651388 10.083975,11.77735 C 10.025695,11.689931 9.9985775,11.590834 10,11.493164 L 10,6.5075684 C 10,6.2272461 10.231934,6 10.5,6 10.776142,6 11,6.2278805 11,6.4910052 L 11,10 c 0,0.552285 0.447715,1 1,1 0.552285,0 1,-0.447715 1,-1 L 13,6.4976988 C 13,6.2228273 13.231934,6 13.5,6 13.776142,6 14,6.2148437 14,6.4976988 L 14,10 c 0,0.552285 0.447715,1 1,1 0.552285,0 1,-0.447715 1,-1 L 16,6.4910052 Z M 20.455737,16.93681 c 0.157771,-0.0095 2.25691,-1.731488 1.388257,-7.5134702 C 24.047729,14.899536 21,18 21,18 l 0,10.997527 C 21,29.551177 21.443865,30 22,30 c 0.552285,0 1,-0.447489 1,-0.998502 L 23,17 c 1.811923,-0.184066 3,-0.986481 3,-3.5 C 26,11.481345 25.350586,7.8444824 20.102539,6 20.602539,10.526123 18,10.462434 18,13.5 c 0,2.466018 1.400879,3.5 2.455737,3.43681 z"
-             id="path16"
-             inkscape:connector-curvature="0" />
-        </g>
-      </g>
-    </g>
-  </g>
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1"
+     d="M 5.3113621,0 C 6.5741835,11.431375 0,11.269512 0,18.941323 0,25.169607 3.5384459,27.782634 6.2026406,27.623038 6.6011155,27.599048 11.902247,23.248632 9.7083365,8.6454035 15.274187,22.476326 7.5758695,30.306778 7.5758695,30.306778 l 0,3.16133 c 0,1.398323 1.120691,2.531892 2.5252885,2.531892 1.394877,0 2.528592,-1.130328 2.528592,-2.52199 l 0,-5.696523 c 4.576271,-0.464886 7.575869,-2.491909 7.575869,-8.840164 C 20.205619,13.842918 18.566059,4.658506 5.3113621,0 Z"
+     id="path3726"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cscccssscsc" />
 </svg>
