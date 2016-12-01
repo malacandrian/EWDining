@@ -27,7 +27,7 @@ Main:
       link: /puppets
 
 Footer:
-  class: endmenu
+  class: end-menu
   endContent: ""
   contents:
     -
