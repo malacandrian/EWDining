@@ -7,6 +7,8 @@ Self-Raising Flour:
       item: Gluten Free Self-Raising Flour
       proportion: Replace the flour 1:1 by volume
       comment: This is worth experimenting with as the end result can be very dry or crumbly.
+      suitable-for:
+        - Gluten
 
 Baking Powder:
   measurement: teaspoon
@@ -56,19 +58,19 @@ Egg:
         - Vegan
     -
       item: Flaxseed
-      quantity: 10g ground flaxseed and 50mL water per egg.
+      proportion: 10g ground flaxseed and 50mL water per egg.
       comment: Has a strong flavour, best used with whole-grain flours.
       suitable-for:
         - Vegan
     -
       item: Silken Tofu
-      quantity: 65g per egg.
+      proportion: 65g per egg.
       comment: Very dense, so avoid with lighter/fluffier dishes.
       suitable-for:
         - Vegan
     -
       item: Baking Soda and Vinegar
-      quantity: 15mL vinegar and 5g baking soda per egg.
+      proportion: 15mL vinegar and 5g baking soda per egg.
       comment: Good for fluffier baked goods.
       suitable-for:
         - Vegan
