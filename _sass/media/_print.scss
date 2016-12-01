@@ -1,5 +1,5 @@
 /* Hide uneeded sections */
-.sidebar, .search, .mainmenu, .endmenu, .youtube, .comments
+.sidebar, .search, .main-menu, .end-menu, .youtube, .comments, .author-card
 {
   display: none;
 }
@@ -7,9 +7,12 @@
 /* Resize logo */
 .logo
 {
-  height: 200px;
+  height: line-measure(3);
   width: auto;
-  margin: auto;
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* On-Page layout */
@@ -40,4 +43,12 @@
       margin-right: none;
     }
   }
+}
+
+.recipe
+{
+  page-break-before: always;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
