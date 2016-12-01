@@ -73,3 +73,8 @@ a, a:link, a:visited, a:hover, a:active
   @include font-scale(1.5);
   font-family: $headerFont;
 }
+
+strong
+{
+  font-weight: bold;
+}
