@@ -8,30 +8,19 @@ Tipue drop is released under the MIT License
 http://www.tipue.com/drop
 */
 
-
-#tipue_drop_input
-{
-     font: 13px/1.6 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color: #333;
-	padding: 13px 13px 13px 40px;
-	width: 170px;
-	border: 1px solid #e2e2e2;
-	border-radius: 0;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-     box-shadow: none;
-	outline: 0;
-	margin: 0;
-	background: #fff url('img/search.png') no-repeat 15px 15px;
-}
-
 #tipue_drop_content
 {
-     display: none;
-     position: absolute;
-	margin: 13px 20px 0 0;
+   display: none;
+   position: absolute;
+  margin-bottom: 13px;
+  margin-left: 20px;
+  margin-right: 0;
+  margin-top: 38.4pt;
+
 	line-height: 0;
 	z-index: 1000;
+  align-self: flex-end;
+
 }
 
 .tipue_drop_box
