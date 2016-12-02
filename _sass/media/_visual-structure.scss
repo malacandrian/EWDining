@@ -47,6 +47,7 @@ body
 
 .search
 {
+  display: flex;
   height: line-measure(2);
   width: 100%;
   max-width: 30rem;
@@ -134,7 +135,7 @@ main
   }
 }
 
-.end-menu > ul 
+.end-menu > ul
 {
   display: flex;
   align-items: stretch;
