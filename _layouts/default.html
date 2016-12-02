@@ -12,6 +12,7 @@
           <input type="search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required="true" />
           <input type="submit" value="&#128269;" />
       </form>
+      <div id="tipue_drop_content"></div>
       <a href="/">
         {% include SVG/logo.svg %}
       </a>
@@ -31,5 +32,11 @@
         <a href="https://williams.ee">https://williams.ee</a>
         {% include menu.html menu=site.data.Menu.Footer %}
       </div>
+
+      <script>
+        $(document).ready(function() {
+             $('#tipue_search_input').tipuedrop();
+        });
+      </script>
   </body>
 </html>
