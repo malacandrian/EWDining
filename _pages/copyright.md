@@ -3,7 +3,7 @@
   layout: page
   permalink: /copyright
 ---
-Unless otherwise stated, the code and contents of this website are Copyright Evan and Emma Williams 2016, all rights reserved. You are not allowed to republish any content without prior written permission. If you wish to share the content of this site, please either share a link to the page, or embed the video. We provide tools to help with this at the bottom of every post.
+Unless otherwise stated, the code and contents of this website are Copyright Evan and Emma Williams 2016, all rights reserved. You are not allowed to republish or modify any content without prior written permission. If you wish to share the content of this site, please either share a link to the page, or embed the video. We provide tools to help with this at the bottom of every post.
 
 Many of the icons on the website (e.g. for parties or dietary requirements) were created by other talented artists and released under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/). Such images were likely found on [The Noun Project](https://thenounproject.com/) or [game-icons.net](http://game-icons.net/). The name of the author and a link to the original image can be found in the website source code next to where each image appears.
 
