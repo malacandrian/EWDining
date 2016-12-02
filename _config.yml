@@ -83,7 +83,6 @@ encoding: utf-8
 markdown: kramdown
 include:
   - _pages
-  - _posts
   - _sass
   - _scripts
 exclude:
