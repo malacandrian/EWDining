@@ -28,12 +28,18 @@ defaults:
     values:
       permalink: /parties/:categories/:slug
       comments: true
+      inSearch: true
   -
     scope:
       path: ""
       type: "pages"
     values:
       archive-level: h2
+  -
+    scope:
+      path: "_pages"
+    values:
+      inSearch: true
   -
     scope:
       path: ""
@@ -45,6 +51,7 @@ defaults:
       testProperty: party
       archive-level: h2
       comments: true
+      inSearch: true
   -
     scope:
       path: ""
@@ -56,16 +63,19 @@ defaults:
       archive-level: h2
       picture-root: /resources/images/authors/
       twitter: EWDining
+      inSearch: true
   -
     scope:
       path: "_sass"
     values:
       permalink: /resources/css/:basename.css
+      inSearch: false
   -
     scope:
       path: "_scripts"
     values:
       permalink: /resources/js/:basename.js
+      inSearch: false
 
 # SEO plugin settings
 logo: /resources/images/logo.png
