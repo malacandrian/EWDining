@@ -5,10 +5,17 @@
 
   <style type="text/css">
     @import url(/resources/css/styles.css);
+    @import url(/resources/css/tipuesearch.css);
   </style>
   <script type="text/ecmascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script type="text/ecmascript" src="/resources/js/subscription-panel.js"></script>
   <script type="text/ecmascript" src="/resources/js/recipe.js"></script>
+
+  {% if layout.isSearch %}
+    <script type="text/ecmascript" src="resources/js/tipuesearch_content.js"></script>
+    <script type="text/ecmascript" src="resources/js/tipuesearch_set.js"></script>
+    <script type="text/ecmascript" src="resources/js/tipuesearch.min.js"></script>
+  {% endif %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">

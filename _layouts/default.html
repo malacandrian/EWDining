@@ -5,7 +5,13 @@
   {% include head.html %}
   <body>
     <div class="frame">
-      <form class="search"><input type="search" value="Search" /><input type="submit" value="&#128269;" /></form>
+      <form
+        class="search"
+        action="/search"
+        >
+          <input type="search" value="Search" name="q" id="tipue_search_input" autocomplete="off" required="true" />
+          <input type="submit" value="&#128269;" />
+      </form>
       <a href="/">
         {% include SVG/logo.svg %}
       </a>
