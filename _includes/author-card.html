@@ -9,13 +9,13 @@
       {{include.author.name}}
     </a>
   </h3>
+  <ul class="author-contacts">
+    <li><a href="maito:{{include.author.email}}">✉{{ include.author.email }}</a></li>
+    <li><a href="https://twitter.com/{{include.author.twitter}}">🐦{{include.author.twitter}}</a></li>
+  </ul>
   <img
     class="author-image"
     src="{{include.author.picture-root}}{{include.author.picture}}"
     />
-  <span class="author-email">
-    {{ include.author.email }}
-  </span>
-
   {{ include.author.content }}
 </div>

@@ -98,6 +98,30 @@ main
   width: 100%;
 }
 
+.author-card
+{
+  clear:left;
+  margin-top: line-measure(1);
+  margin-bottom: line-measure(1);
+  > *:first-child
+  {
+    border-bottom: 1px solid $black;
+  }
+}
+
+.author-contacts
+{
+  display: flex;
+}
+
+.author-image
+{
+  width: auto;
+  float: left;
+  height: line-measure(8);
+  margin-right: line-measure(1);
+}
+
 .footer
 {
   width: 100%;
