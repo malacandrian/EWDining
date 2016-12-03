@@ -26,9 +26,15 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-ol, ul {
+ol {
+	list-style: decimal;
+	margin-left: 2rem;
+}
+
+ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
