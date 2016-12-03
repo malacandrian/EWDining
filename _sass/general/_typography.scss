@@ -28,12 +28,19 @@ h1, h2, h3, h4, h5, h6
   {
     margin-top: 0;
   }
+
+  a:link, a:visited a:hover, a:active
+  {
+    font-weight: normal;
+    text-decoration: none;
+  }
 }
 
 h1
 {
   @include font-modular-scale(5);
   border-bottom: 1px solid $black;
+  margin-bottom: line-measure(1);
 }
 
 h2
@@ -64,7 +71,8 @@ h6
 
 a, a:link, a:visited, a:hover, a:active
 {
-  text-decoration: none;
+  text-decoration: underline;
+  font-weight: bold;
   color: $black;
 }
 
