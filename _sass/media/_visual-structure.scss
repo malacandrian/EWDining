@@ -129,11 +129,35 @@ main
   margin-right: line-measure(1);
 }
 
+.sidebar
+{
+  .party-list
+  {
+    @include font-modular-scale(2);
+    font-family: $headerFont;
+
+    a:link, a:visited a:hover, a:active
+    {
+      text-decoration: none;
+    }
+
+  }
+}
+
+.party-list
+{
+  object
+  {
+    height: line-measure(2);
+  }
+}
+
 .footer
 {
   width: 100%;
   display: flex;
   align-items: stretch;
+  margin-top: line-measure(1);
 
   > *
   {

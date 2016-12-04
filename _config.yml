@@ -46,7 +46,7 @@ defaults:
       type: "parties"
     values:
       layout: archive
-      icon-root: parties/icons/
+      icon-root: /resources/images/parties/
       test: equals
       testProperty: party
       archive-level: h2

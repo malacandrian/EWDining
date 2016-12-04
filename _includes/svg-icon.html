@@ -1,0 +1,15 @@
+<object
+  type="image/svg+xml"
+  data="{{include.path}}"
+  class="{{include.class}}"
+  >
+  {{include.alt}}
+</object>
+{% if include.credit %}
+  <!--
+    Icon Credit:
+      {{ include.credit.name }}
+      {{ include.credit.url }}
+      {{ include.credit.licence }}
+  -->
+{% endif %}

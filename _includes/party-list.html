@@ -1,0 +1,23 @@
+<ul class="party-list">
+  {% for party in include.parties %}
+    <li>
+      {% if include.content %}
+        <h2>
+      {% endif %}
+      <a href="{{party.url}}">
+        {% capture icon-path %}{{party.icon-root}}{{party.icon-path}}{% endcapture %}
+        {% include svg-icon.html
+          path=icon-path
+          class="party-icon-side"
+          credit=party.icon-credit
+          alt=""
+          %}
+        {{ party.title }}
+      </a>
+      {% if include.content %}
+        </h2>
+        {{ party.content }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
