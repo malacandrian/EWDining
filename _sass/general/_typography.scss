@@ -45,6 +45,7 @@ h2
 {
   @include font-modular-scale(4);
   border-bottom: 1px solid $black;
+  margin-bottom: line-measure(0.5);
 }
 
 h3
