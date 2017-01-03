@@ -1,8 +1,9 @@
 ---
-  layout: page
-  title: Contact Us
-  permalink: /contact
+title: Contact Us
+permalink: "/contact"
+layout: page
 ---
+
 If you want to talk to us, we'd love to hear from you. Whether you've tried one of our recipes, have a suggestion for something we can do, or just want to say hello. Here's how you can do that.
 
 1. **Comments**

@@ -1,113 +1,105 @@
-# Site settings
+---
 title: Dining with the EW's
-email: ews@williams.ee
-description: > # this means to ignore newlines until "baseurl:"
-  Welcome to Dining with the EW's! We're enthusiasitic about hospitality, and want to encourage more people to get involved. Every month we'll teach you how to throw a great dinner party. New videos every Wednesday.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://williams.ee" # the base hostname & protocol for your site
-
-
-paginate: 5
-paginate_path: /:num/
-
-# Collections
+timezone: UTC
 collections:
-  parties:
-    output: true
-    permalink: /parties/:path
   authors:
+    title: Authors
     output: true
-    permalink: /authors/:path
-
-# Defaults
+    permalink: "/authors/:path"
+  parties:
+    title: Parties
+    output: true
+    permalink: "/parties/:path"
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: /parties/:categories/:slug
-      comments: true
-      inSearch: true
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      archive-level: h2
-  -
-    scope:
-      path: "_pages"
-    values:
-      inSearch: true
-  -
-    scope:
-      path: ""
-      type: "parties"
-    values:
-      layout: archive
-      icon-root: /resources/images/parties/
-      test: equals
-      testProperty: party
-      archive-level: h2
-      comments: true
-      inSearch: true
-  -
-    scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: archive
-      test: equals
-      testProperty: author
-      archive-level: h2
-      picture-root: /resources/images/authors/
-      twitter: EWDining
-      inSearch: true
-  -
-    scope:
-      path: "_sass"
-    values:
-      permalink: /resources/css/:basename.css
-      inSearch: false
-  -
-    scope:
-      path: "_scripts"
-    values:
-      permalink: /resources/js/:basename.js
-      inSearch: false
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/parties/:categories/:slug"
+    comments: true
+    inSearch: true
+- scope:
+    path: ''
+    type: pages
+  values:
+    archive-level: h2
+- scope:
+    path: _pages
+  values:
+    inSearch: true
+- scope:
+    path: ''
+    type: parties
+  values:
+    layout: archive
+    icon-root: "/resources/images/parties/"
+    test: equals
+    testProperty: party
+    archive-level: h2
+    comments: true
+    inSearch: true
+- scope:
+    path: ''
+    type: authors
+  values:
+    layout: archive
+    test: equals
+    testProperty: author
+    archive-level: h2
+    picture-root: "/resources/images/authors/"
+    twitter: EWDining
+    inSearch: true
+- scope:
+    path: _sass
+  values:
+    permalink: "/resources/css/:basename.css"
+    inSearch: false
+- scope:
+    path: _scripts
+  values:
+    permalink: "/resources/js/:basename.js"
+    inSearch: false
+email: ews@williams.ee
+description: 'Welcome to Dining with the EW''s! We''re enthusiasitic about hospitality,
+  and want to encourage more people to get involved. Every month we''ll teach you
+  how to throw a great dinner party. New videos every Wednesday.
 
-# SEO plugin settings
-logo: /resources/images/logo.png
-
+'
+baseurl: ''
+url: https://williams.ee
+paginate: 5
+paginate_path: "/:num/"
+logo: "/resources/images/logo.png"
 twitter_username: EWDining
 twitter:
   username: EWDining
 facebook:
   publisher: EWDining
-
-github_username:  malacandrian
-
-# Build settings
+github_username: malacandrian
 encoding: utf-8
 markdown: kramdown
 include:
-  - _pages
-  - _sass
-  - _scripts
+- _pages
+- _sass
+- _scripts
 exclude:
-  - .gitignore
-  - .gitmodules
-  - CNAME
-  - LICENSE.md
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - .jekyll-metadata
-  #Prevent SASS libraries from generating pages (They can still be referenced/imported)
-  - _sass/libraries/
+- ".gitignore"
+- ".gitmodules"
+- CNAME
+- LICENSE.md
+- README.md
+- Gemfile
+- Gemfile.lock
+- ".jekyll-metadata"
+- _sass/libraries/
 gems:
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed

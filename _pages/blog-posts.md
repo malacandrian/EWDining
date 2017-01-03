@@ -1,7 +1,8 @@
 ---
-  layout: archive
-  test: notExists
-  testProperty: video
-  permalink: /blog
-  title: blog posts
+title: blog posts
+permalink: "/blog"
+layout: archive
+test: notExists
+testProperty: video
 ---
+

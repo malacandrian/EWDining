@@ -1,5 +1,7 @@
 ---
-  name: Marky
-  picture: marky.jpg
-  sort-order: 60
+title: Marky
+name: Marky
+picture: marky.jpg
+sort-order: 60
 ---
+

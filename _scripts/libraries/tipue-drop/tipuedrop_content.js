@@ -1,5 +1,6 @@
 ---
 ---
+
 var tipuedrop = {"pages" : [
 
   {% for party in site.parties %}
