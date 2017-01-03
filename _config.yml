@@ -71,7 +71,7 @@ description: 'Welcome to Dining with the EW''s! We''re enthusiasitic about hospi
   how to throw a great dinner party. New videos every Wednesday.
 
 '
-baseurl: ''
+baseurl: 
 url: https://williams.ee
 paginate: 5
 paginate_path: "/:num/"
