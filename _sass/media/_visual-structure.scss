@@ -141,6 +141,16 @@ main
       text-decoration: none;
     }
 
+    li
+    {
+      margin-top: line-measure(0.5);
+
+      &:first-child
+      {
+        margin-top: 0;
+      }
+    }
+
   }
 }
 
