@@ -1,5 +1,6 @@
 ---
-  layout: search
-  title: Search Results
-  permalink: /search
+title: Search Results
+permalink: "/search"
+layout: search
 ---
+

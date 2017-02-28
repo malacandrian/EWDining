@@ -1,5 +1,7 @@
 ---
-  name: Jelly Jackson
-  picture: jelly.jpg
-  sort-order: 30
+title: Jelly
+name: Jelly Jackson
+picture: jelly.jpg
+sort-order: 30
 ---
+

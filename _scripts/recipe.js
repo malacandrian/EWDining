@@ -1,5 +1,6 @@
 ---
 ---
+
 function toggleState(state){
   if(state === "none") {
     return "inline-flex";

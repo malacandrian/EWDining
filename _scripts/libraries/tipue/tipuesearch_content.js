@@ -1,5 +1,6 @@
 ---
 ---
+
 var tipuesearch = {"pages": [
   {% for author in site.authors %}
     {% if author.inSearch %}

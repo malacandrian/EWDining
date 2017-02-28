@@ -1,5 +1,6 @@
 ---
-  layout: page
-  title: Community Guidelines
-  permalink: /community
+title: Community Guidelines
+permalink: "/community"
+layout: page
 ---
+
