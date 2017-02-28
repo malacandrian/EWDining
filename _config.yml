@@ -99,8 +99,8 @@ exclude:
 - ".jekyll-metadata"
 - _sass/libraries/
 gems:
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-admin
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-admin
